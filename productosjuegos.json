@@ -1,14 +1,14 @@
 [
   {
-    "id": "gta-6-ps5",
+    "id": "resident-evil-6-ps4",
     "tipo": "juego",
-    "titulo": "GTA 6 Standard Edition PS5",
-    "plataforma": "PS5",
-    "categoria": "Acción / Mundo Abierto",
-    "descuento": "-14%",
-    "primario": { "actual": "67.90", "anterior": "79.00" },
-    "secundario": { "actual": "56.60", "anterior": "58.90" },
-    "imagen": "https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=600&q=80",
+    "titulo": "Resident Evil 6 PS5",
+    "plataforma": "PS4",
+    "categoria": "Juego de disparos / Terror / Acción",
+    "descuento": "-55%",
+    "primario": { "actual": "9.25", "anterior": "18.50" },
+    "secundario": { "actual": "7.70", "anterior": "12.30" },
+    "imagen": "./img/resident-evil-6-ps4.jpg",
     "info": {
       "sinopsis": "Explora el estado de Leonida y las calles de Vice City en una aventura de mundo abierto llena de acción, misiones y libertad total.",
       "tamano": "85 GB aprox.",
