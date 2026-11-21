@@ -6,7 +6,7 @@ const CONFIG = {
   nombreTiendaParte1: "GEEK",
   nombreTiendaParte2: "STOP",
   moneda: "USD",
-  whatsappNumero: "593999999999", // Tu número con código de país sin + ni espacios
+  whatsappNumero: "593939665618", // Tu número con código de país sin + ni espacios
 
   // ========================================================================
   // AQUÍ CAMBIAR EL NÚMERO DE PRODUCTOS EN LA PAGINACIÓN
