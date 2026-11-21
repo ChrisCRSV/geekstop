@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Catálogo Digital Gamer</title>
+  <link rel="stylesheet" href="./estilos.css" />
+</head>
+<body>
+
+  <!-- ENCABEZADO: LOGO Y BUSCADOR -->
+  <header>
+    <div class="header-inner">
+      <div class="logo" id="storeName">GEEK <span>STOP</span></div>
+      <div class="search-box">
+        <input type="text" id="searchInput" placeholder="Buscar juego, combo o categoría..." />
+      </div>
+    </div>
+  </header>
+
+  <!-- FUTURO: Aquí podrás agregar banners o avisos promocionales si lo deseas -->
+
+  <!-- BARRA DE FILTROS -->
+  <div class="filters" id="filterBar">
+    <button class="filter-btn active" data-filter="TODOS">Todos</button>
+    <button class="filter-btn" data-filter="PS5">Juegos PS5</button>
+    <button class="filter-btn" data-filter="PS4">Juegos PS4</button>
+    <button class="filter-btn" data-filter="COMBO">Combos</button>
+    <!-- FUTURO: Aquí podrás sumar filtros para antivirus, streaming, etc. -->
+  </div>
+
+  <!-- CATÁLOGO Y PAGINACIÓN -->
+  <main class="container">
+    <div class="section-title" id="resultCount">Cargando catálogo...</div>
+    <div class="grid" id="productGrid"></div>
+
+    <div class="load-more-wrap" id="loadMoreWrap" style="display: none;">
+      <button type="button" class="load-more-btn" id="loadMoreBtn">
+        Cargar más productos
+      </button>
+    </div>
+  </main>
+
+  <!-- BOTÓN FLOTANTE DEL CARRITO (ABAJO A LA DERECHA) -->
+  <button type="button" class="floating-cart-btn" id="openCartBtn" aria-label="Abrir carrito">
+    <span>Carrito</span>
+    <span class="cart-badge" id="cartCount">0</span>
+  </button>
+
+  <!-- VENTANA MODAL: INFORMACIÓN DETALLADA DEL JUEGO -->
+  <div class="modal-backdrop" id="infoModalBackdrop" aria-hidden="true">
+    <div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="infoModalTitle">
+      <div class="modal-header">
+        <h2 class="modal-title" id="infoModalTitle">Detalles del Juego</h2>
+        <button type="button" class="modal-close" id="closeInfoModal" aria-label="Cerrar">✕</button>
+      </div>
+      <div id="infoModalContent"></div>
+    </div>
+  </div>
+
+  <!-- VENTANA MODAL: PEDIDO / CARRITO DE COMPRAS -->
+  <div class="modal-backdrop" id="cartModalBackdrop" aria-hidden="true">
+    <div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="cartModalTitle">
+      <div class="modal-header">
+        <h2 class="modal-title" id="cartModalTitle">Tu Pedido</h2>
+        <button type="button" class="modal-close" id="closeCartModal" aria-label="Cerrar">✕</button>
+      </div>
+      <div id="cartModalContent"></div>
+    </div>
+  </div>
+
+  <!-- AVISO RÁPIDO AL AGREGAR AL CARRITO -->
+  <div class="toast" id="toastMsg">Producto agregado al carrito</div>
+
+  <!-- PIE DE PÁGINA -->
+  <footer id="storeFooter"></footer>
+
+  <script src="./config.js"></script>
+  <script src="./app.js"></script>
+</body>
+</html>
