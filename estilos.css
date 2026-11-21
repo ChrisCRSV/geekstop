@@ -171,11 +171,12 @@ header {
   z-index: 2;
 }
 
-.card img {
-  width: 100%;
-  height: 225px;
-  object-fit: cover;
-  background: #0b1120;
+@media (max-width: 600px) {
+  .card img {
+    aspect-ratio: 4 / 3;
+    object-fit: contain;
+    padding: 4px;
+  }
 }
 
 .card-body {
