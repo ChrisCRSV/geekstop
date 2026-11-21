@@ -174,10 +174,18 @@ header {
 .card img {
   width: 100%;
   height: auto;
-  aspect-ratio: 4 / 3; /* o 1 / 1 */
-  object-fit: cover;
-  object-position: center top;
+  aspect-ratio: 1 / 1; /* o 3 / 4 si usas 540x720 */
+  object-fit: contain;
   background: #0b1120;
+}
+
+/* En celular: hacer la portada un poco más compacta de alto para ahorrar scroll */
+@media (max-width: 600px) {
+  .card img {
+    aspect-ratio: 4 / 3;
+    max-height: 210px;
+    margin: 0 auto;
+  }
 }
 
 .card-body {
