@@ -174,8 +174,9 @@ header {
 .card img {
   width: 100%;
   height: auto;
-  aspect-ratio: 1 / 1; /* o 3 / 4 si usas 540x720 */
-  object-fit: contain;
+  aspect-ratio: 4 / 3; /* o 1 / 1 */
+  object-fit: cover;
+  object-position: center top;
   background: #0b1120;
 }
 
