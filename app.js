@@ -277,7 +277,16 @@ function abrirModalInfo(productoId) {
       </button>
     </div>
   `;
+const modalDiffToggle = document.getElementById("modalDiffToggle");
+  const modalDiffPanel = document.getElementById("modalDiffPanel");
+  const modalDiffArrow = document.getElementById("modalDiffArrow");
 
+  modalDiffToggle.addEventListener("click", () => {
+    const estaAbierto = modalDiffPanel.classList.toggle("open");
+    modalDiffToggle.setAttribute("aria-expanded", estaAbierto ? "true" : "false");
+    modalDiffArrow.textContent = estaAbierto ? "▴" : "▾";
+  });
+   
   document.getElementById("modalAddPrimario").addEventListener("click", () => {
     agregarAlCarrito(producto, "Primario", producto.primario.actual);
   });
