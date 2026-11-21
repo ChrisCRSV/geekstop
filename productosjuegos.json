@@ -1,0 +1,74 @@
+[
+  {
+    "id": "gta-6-ps5",
+    "tipo": "juego",
+    "titulo": "GTA 6 Standard Edition PS5",
+    "plataforma": "PS5",
+    "categoria": "Acción / Mundo Abierto",
+    "descuento": "-14%",
+    "primario": { "actual": "67.90", "anterior": "79.00" },
+    "secundario": { "actual": "56.60", "anterior": "58.90" },
+    "imagen": "https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=600&q=80",
+    "info": {
+      "sinopsis": "Explora el estado de Leonida y las calles de Vice City en una aventura de mundo abierto llena de acción, misiones y libertad total.",
+      "tamano": "85 GB aprox.",
+      "idiomas": "Español (Latinoamérica) / Inglés / Portugués",
+      "modo": "Un jugador / Online",
+      "nota": "Cuenta digital verificada. Sigue las instrucciones enviadas por WhatsApp al instalar."
+    }
+  },
+  {
+    "id": "fc-27-ps5",
+    "tipo": "juego",
+    "titulo": "EA SPORTS FC 27 Standard Edition",
+    "plataforma": "PS5",
+    "categoria": "Deportes",
+    "descuento": "-46%",
+    "primario": { "actual": "28.50", "anterior": "45.00" },
+    "secundario": { "actual": "20.50", "anterior": "38.00" },
+    "imagen": "https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=600&q=80",
+    "info": {
+      "sinopsis": "Temporada actualizada con clubes, selecciones, modos carrera y partidas multijugador competitivas y amistosas.",
+      "tamano": "62 GB aprox.",
+      "idiomas": "Español / Inglés / Francés",
+      "modo": "Un jugador / Multijugador local y online",
+      "nota": "Los modos online requieren suscripción activa según corresponda en tu consola."
+    }
+  },
+  {
+    "id": "gow-ragnarok-ps4",
+    "tipo": "juego",
+    "titulo": "God of War Ragnarök",
+    "plataforma": "PS4",
+    "categoria": "Acción / Aventura",
+    "descuento": "-65%",
+    "primario": { "actual": "18.90", "anterior": "39.90" },
+    "secundario": { "actual": "12.60", "anterior": "36.00" },
+    "imagen": "https://images.unsplash.com/photo-1538481199705-c710c4e965fc?auto=format&fit=crop&w=600&q=80",
+    "info": {
+      "sinopsis": "Kratos y Atreus recorren los nueve reinos mientras se preparan para el Ragnarök y enfrentan nuevas amenazas nórdicas.",
+      "tamano": "90 GB aprox.",
+      "idiomas": "Español / Inglés",
+      "modo": "Un jugador",
+      "nota": "Aventura enfocada en campaña narrativa."
+    }
+  },
+  {
+    "id": "combo-re-4-5-6",
+    "tipo": "juego",
+    "titulo": "Combo Resident Evil 4, 5 y 6",
+    "plataforma": "COMBO",
+    "categoria": "Survival Horror / Acción",
+    "descuento": "-60%",
+    "primario": { "actual": "24.90", "anterior": "49.00" },
+    "secundario": { "actual": "16.80", "anterior": "42.00" },
+    "imagen": "https://images.unsplash.com/photo-1552820728-8b83bb6b773f?auto=format&fit=crop&w=600&q=80",
+    "info": {
+      "sinopsis": "Paquete con tres entregas clásicas de la saga Resident Evil que combinan tensión, investigación, acción y modo cooperativo.",
+      "tamano": "55 GB en total aprox.",
+      "idiomas": "Español / Inglés",
+      "modo": "Un jugador / Cooperativo",
+      "nota": "Incluye los tres títulos listados en el combo."
+    }
+  }
+]
