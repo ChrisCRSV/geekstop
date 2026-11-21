@@ -491,6 +491,43 @@ header {
   margin-top: 8px;
 }
 
+/* Botón desplegable dentro de la ventana modal */
+.modal-diff-toggle {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  background: var(--card);
+  color: #93c5fd;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 10px 12px;
+  font-size: 0.88rem;
+  font-weight: 700;
+  cursor: pointer;
+  margin-bottom: 12px;
+  text-align: left;
+  transition: 0.2s;
+}
+
+.modal-diff-toggle:hover {
+  border-color: var(--accent);
+  background: var(--card-hover);
+}
+
+/* Oculto por defecto hasta hacer clic */
+.modal-diff-panel {
+  display: none;
+  margin-top: -4px;
+  margin-bottom: 14px;
+}
+
+.modal-diff-panel.open {
+  display: block;
+}
+
+
 /* Items dentro del carrito */
 .cart-items {
   display: flex;
