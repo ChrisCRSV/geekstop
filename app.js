@@ -257,11 +257,15 @@ function abrirModalInfo(productoId) {
       <div class="detail-item"><strong>Nota:</strong> ${info.nota || "Entrega digital."}</div>
     </div>
 
-    <div class="diff-box-modal">
-      <div style="font-weight: 800; color: #93c5fd; margin-bottom: 6px;">
-        ¿Cuál es la diferencia entre Primario y Secundario?
+   <button type="button" class="modal-diff-toggle" id="modalDiffToggle" aria-expanded="false">
+      <span>¿Cuál es la diferencia entre Primario y Secundario?</span>
+      <span id="modalDiffArrow">▾</span>
+    </button>
+
+    <div class="modal-diff-panel" id="modalDiffPanel">
+      <div class="diff-box-modal" style="margin-bottom: 0;">
+        ${CONFIG.explicacionPrimarioSecundario}
       </div>
-      ${CONFIG.explicacionPrimarioSecundario}
     </div>
 
     <div class="card-actions">
