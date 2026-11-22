@@ -323,8 +323,7 @@ const incluyeHtml = incluyeItems.length
     </div>
   `
   : "";
-   
-  const imagenActual = version.imagen || juegoActivo.imagen;
+   const imagenVersion = version && version.imagen ? version.imagen : null;
    const { consolas, elegida } = obtenerConsolasDeVersion(version, consolaActiva);
    
   consolaActiva = elegida;
