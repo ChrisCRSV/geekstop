@@ -510,17 +510,7 @@ body {
   color: var(--text-muted);
 }
 
-/* Afuera de cualquier clase: define la animación */
-@keyframes suaveCambioVista {
-  from {
-    opacity: 0.35;
-    transform: translateY(5px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
+
 
 @keyframes suaveCambioDato {
   from {
@@ -541,7 +531,7 @@ body {
   border: 1px solid var(--border-subtle);
   border-radius: 16px;
   padding: 16px;
-   animation: suaveCambioVista 0.22s ease-out;
+ 
 }
 
 .config-box h2 {
