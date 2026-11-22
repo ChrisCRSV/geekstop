@@ -522,6 +522,19 @@ body {
   }
 }
 
+@keyframes suaveCambioDato {
+  from {
+    opacity: 0.15;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.dato-animado {
+  animation: suaveCambioDato 0.28s ease;
+}
+
 .config-box {
    
   background: var(--bg-main);
