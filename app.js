@@ -250,11 +250,13 @@ function abrirModalInfo(productoId) {
       ${info.sinopsis || "Juego digital disponible para entrega coordinada por WhatsApp."}
     </p>
 
-    <div class="detail-list">
-      <div class="detail-item"><strong>Tamaño aproximado:</strong> ${info.tamano || "Consultar"}</div>
-      <div class="detail-item"><strong>Voces:</strong> ${info.voces || "Español / Inglés"}</div>
-      <div class="detail-item"><strong>Subtítulos:</strong> ${info.subtitulos || "espanol, aleman"}</div>
-      <div class="detail-item"><strong>Nota:</strong> ${info.nota || "Entrega digital."}</div>
+//propiedades del modal 
+
+<div class="detail-list">
+      ${info.tamano ? `<div class="detail-item"><strong>Tamaño aproximado:</strong> ${info.tamano}</div>` : ""}
+      ${info.voces ? `<div class="detail-item"><strong>Voces:</strong> ${info.voces}</div>` : ""}
+      ${info.subtitulos ? `<div class="detail-item"><strong>Subtítulos:</strong> ${info.subtitulos}</div>` : ""}
+      ${info.nota ? `<div class="detail-item"><strong>Nota:</strong> ${info.nota}</div>` : ""}
     </div>
 
    <button type="button" class="modal-diff-toggle" id="modalDiffToggle" aria-expanded="false">
