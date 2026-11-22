@@ -311,6 +311,18 @@ function renderizarConfigurador() {
   if (!juegoActivo) return;
 
   const version = juegoActivo.versiones[versionActivaIdx] || juegoActivo.versiones[0];
+   const imagenActual = version.imagen || juegoActivo.imagen;
+const incluyeItems = Array.isArray(version.incluye) ? version.incluye.filter(Boolean) : [];
+const incluyeHtml = incluyeItems.length
+  ? `
+    <div class="edition-includes-box">
+      <div class="edition-includes-title">Esta edición incluye</div>
+      <ul class="edition-includes-list">
+        ${incluyeItems.map((item) => `<li class="edition-includes-item">${item}</li>`).join("")}
+      </ul>
+    </div>
+  `
+  : "";
   const imagenActual = version.imagen || juegoActivo.imagen;
    const { consolas, elegida } = obtenerConsolasDeVersion(version, consolaActiva);
    
@@ -374,6 +386,7 @@ function renderizarConfigurador() {
 
       <div class="step-label">01 · ELEGÍ TU VERSIÓN</div>
       <div class="version-list">${versionesHtml}</div>
+      ${incluyeHtml}
 
       <div class="step-label">02 · ELEGÍ TU CONSOLA</div>
       <div class="console-choice-grid">${consolasHtml}</div>
@@ -416,17 +429,15 @@ function renderizarConfigurador() {
     </div>
   `;
 
-const animarPrecios = () => {
-    detailContentEl
-      .querySelectorAll(".account-price, .total-amount, .detail-hero-img")
-      .forEach((el) => {
-        el.classList.remove("dato-animado");
-        void el.offsetWidth;
-        el.classList.add("dato-animado");
-      });
+const animarElementos = (selector) => {
+    detailContentEl.querySelectorAll(selector).forEach((el) => {
+      el.classList.remove("edicion-animada");
+      void el.offsetWidth;
+      el.classList.add("edicion-animada");
+    });
   };
 
- detailContentEl.querySelectorAll("[data-ver-idx]").forEach((btn) => {
+  detailContentEl.querySelectorAll("[data-ver-idx]").forEach((btn) => {
     btn.addEventListener("click", () => {
       versionActivaIdx = Number(btn.dataset.verIdx);
       consolaActiva = obtenerConsolasDeVersion(
@@ -434,25 +445,15 @@ const animarPrecios = () => {
         consolaActiva
       ).elegida;
       renderizarConfigurador();
-
-      detailContentEl
-        .querySelectorAll(
-          ".account-price, .total-amount, .detail-hero-img, .version-list, .console-choice-grid"
-        )
-        .forEach((el) => {
-          el.classList.remove("dato-animado");
-          void el.offsetWidth;
-          el.classList.add("dato-animado");
-        });
+      animarElementos(".detail-hero-img, .edition-includes-box, .account-price, .total-amount");
     });
   });
-   
 
   detailContentEl.querySelectorAll("[data-cons-val]").forEach((btn) => {
     btn.addEventListener("click", () => {
       consolaActiva = btn.dataset.consVal;
       renderizarConfigurador();
-      animarPrecios();
+      animarElementos(".account-price, .total-amount");
     });
   });
 
@@ -460,7 +461,7 @@ const animarPrecios = () => {
     card.addEventListener("click", () => {
       cuentaActiva = card.dataset.cuenta;
       renderizarConfigurador();
-      animarPrecios();
+      animarElementos(".account-price, .total-amount");
     });
   });
 
