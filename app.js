@@ -252,8 +252,8 @@ function abrirModalInfo(productoId) {
 
     <div class="detail-list">
       <div class="detail-item"><strong>Tamaño aproximado:</strong> ${info.tamano || "Consultar"}</div>
-      <div class="detail-item"><strong>Idiomas:</strong> ${info.idiomas || "Español / Inglés"}</div>
-      <div class="detail-item"><strong>Modo de juego:</strong> ${info.modo || "Un jugador / Online"}</div>
+      <div class="detail-item"><strong>Voces:</strong> ${info.voces || "Español / Inglés"}</div>
+      <div class="detail-item"><strong>Subtítulos:</strong> ${info.subtitulos || "espanol, aleman"}</div>
       <div class="detail-item"><strong>Nota:</strong> ${info.nota || "Entrega digital."}</div>
     </div>
 
