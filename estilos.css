@@ -514,7 +514,7 @@ body {
 
 @keyframes suaveCambioDato {
   from {
-    opacity: 0.15;
+    opacity: 0.25;
   }
   to {
     opacity: 1;
@@ -522,7 +522,7 @@ body {
 }
 
 .dato-animado {
-  animation: suaveCambioDato 0.28s ease;
+  animation: suaveCambioDato 0.3s ease-out;
 }
 
 .config-box {
@@ -531,6 +531,7 @@ body {
   border: 1px solid var(--border-subtle);
   border-radius: 16px;
   padding: 16px;
+   min-height: 460px;
  
 }
 
