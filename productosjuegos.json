@@ -1,230 +1,194 @@
 [
   {
-    "id": "resident-evil-6-ps4",
+    "id": "resident-evil-village",
     "tipo": "juego",
-    "titulo": "Resident Evil 6 PS4",
-    "plataforma": "PS4",
-    "categoria": "Juego de disparos / Terror / Acción",
-    "descuento": "-40%",
-    "primario": { "actual": "11", "anterior": "18.50" },
-    "secundario": { "actual": "7", "anterior": "12.30" },
-    "imagen": "./img/resident-evil-6-ps4.png",
+    "titulo": "Resident Evil Village",
+    "genero": "Terror",
+    "esPreventa": false,
+    "esOferta": true,
+    "descuento": "-35%",
+    "imagen": "./img/re-village.jpg",
     "info": {
-      "sinopsis": "Luego de 15 años de la destrucción de Raccoon City, la tensión por una nueva amenaza bioterrorista vuelve a estar presente.",
-      "tamano": "16 GB aprox.",
+      "sinopsis": "Ambientada años después de los horribles acontecimientos de Resident Evil 7 biohazard, una nueva historia comienza con Ethan Winters y su esposa Mia viviendo en paz.",
+      "tamano": "35 GB aprox.",
+      "voces": "Español / Inglés",
+      "subtitulos": "Español / Inglés",
+      "nota": "Entrega digital con guía paso a paso."
+    },
+    "versiones": [
+      {
+        "id": "standard",
+        "nombre": "Standard Edition",
+        "subtitulo": "EL JUEGO BASE",
+        "consolas": {
+          "PS4": {
+            "primario": { "actual": "20.00", "anterior": "30.00" },
+            "secundario": { "actual": "15.00", "anterior": "22.00" }
+          },
+          "PS5": {
+            "primario": { "actual": "22.00", "anterior": "32.00" },
+            "secundario": { "actual": "16.50", "anterior": "24.00" }
+          }
+        }
+      },
+      {
+        "id": "gold-bundle",
+        "nombre": "Gold Edition Bundle",
+        "subtitulo": "CONTENIDO EXTRA",
+        "consolas": {
+          "PS4": {
+            "primario": { "actual": "34.00", "anterior": "48.00" },
+            "secundario": { "actual": "28.00", "anterior": "40.00" }
+          },
+          "PS5": {
+            "primario": { "actual": "36.00", "anterior": "50.00" },
+            "secundario": { "actual": "29.00", "anterior": "42.00" }
+          }
+        }
+      },
+      {
+        "id": "gold",
+        "nombre": "Gold Edition",
+        "subtitulo": "CONTENIDO EXTRA",
+        "consolas": {
+          "PS4": {
+            "primario": { "actual": "12.00", "anterior": "18.00" },
+            "secundario": { "actual": "7.00", "anterior": "12.00" }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "god-of-war-ragnarok",
+    "tipo": "juego",
+    "titulo": "God of War Ragnarök",
+    "genero": "Acción",
+    "esPreventa": false,
+    "esOferta": false,
+    "descuento": "",
+    "imagen": "https://images.unsplash.com/photo-1538481199705-c710c4e965fc?auto=format&fit=crop&w=600&q=80",
+    "info": {
+      "sinopsis": "Kratos y Atreus viajan por los Nueve Reinos en busca de respuestas mientras se acerca el Ragnarök.",
+      "tamano": "90 GB aprox.",
       "voces": "Español",
-      "subtitulos": "",
-      "nota": "Juego original y completo, Descarga desde tu consola, Incluye guía paso a paso"
-    }
-  },
-
-  {
-    "id": "resident-evil-6-ps5",
-    "tipo": "juego",
-    "titulo": "Resident Evil 6 PS5",
-    "plataforma": "PS5",
-    "categoria": "Juego de disparos / Terror / Acción",
-    "descuento": "-29%",
-    "primario": { "actual": "13", "anterior": "18.50" },
-    "secundario": { "actual": "9", "anterior": "12.30" },
-    "imagen": "./img/resident-evil-6-ps5.png",
-    "info": {
-      "sinopsis": "Luego de 15 años de la destrucción de Raccoon City, la tensión por una nueva amenaza bioterrorista vuelve a estar presente.",
-      "tamano": "16 GB aprox.",
-      "voces": "Español",
-      "subtitulos": "",
-      "nota": "Juego original y completo, Descarga desde tu consola, Incluye guía paso a paso"
-    }
-  },
-
-  {
-    "id": "the-last-of-us-remastered-ps4",
-    "tipo": "juego",
-    "titulo": "The Last Of Us Remastered PS4",
-    "plataforma": "PS4",
-    "categoria": "Aventura, Acción",
-    "descuento": "-40%",
-    "primario": { "actual": "11", "anterior": "18.50" },
-    "secundario": { "actual": "7", "anterior": "12.30" },
-    "imagen": "./img/the-last-of-us-remastered-ps4.png",
-    "info": {
-      "sinopsis": "Ciudades abandonadas reclamadas por la naturaleza. Una población diezmada por una plaga moderna. Los supervivientes se matan entre sí para tener comida, armas y todo aquello que pueda caer en sus manos. ",
-      "tamano": "43 GB aprox.",
-      "voces": "Español (Latino)",
-      "subtitulos": "",
-      "nota": "Juego original y completo, Descarga desde tu consola, Incluye guía paso a paso"
-    }
-  },
-
-  {
-    "id": "the-last-of-us-remastered-ps5",
-    "tipo": "juego",
-    "titulo": "The Last Of Us Remastered PS5",
-    "plataforma": "PS5",
-    "categoria": "Aventura, Acción",
-    "descuento": "-29%",
-    "primario": { "actual": "13", "anterior": "18.50" },
-    "secundario": { "actual": "9", "anterior": "12.30" },
-    "imagen": "./img/the-last-of-us-remastered-ps5.png",
-    "info": {
-      "sinopsis": "Ciudades abandonadas reclamadas por la naturaleza. Una población diezmada por una plaga moderna. Los supervivientes se matan entre sí para tener comida, armas y todo aquello que pueda caer en sus manos. ",
-      "tamano": "43 GB aprox.",
-      "voces": "Español (Latino)",
-      "subtitulos": "",
-      "nota": "Juego original y completo, Descarga desde tu consola, Incluye guía paso a paso"
-    }
-  },
-
-  {
-    "id": "re-village-ps5",
-    "tipo": "juego",
-    "titulo": "Resident Evil Village PS5",
-    "plataforma": "PS5",
-    "categoria": "Terror, Acción",
-    "descuento": "-49%",
-    "primario": { "actual": "18", "anterior": "35.50" },
-    "secundario": { "actual": "9", "anterior": "22.30" },
-    "imagen": "./img/re-village-ps5.png",
-    "info": {
-      "sinopsis": "En la octava entrega de la franquicia Resident Evil, Ethan Winters y su esposa Mia viven pacíficamente en una nueva ubicación, marcada por el frío y la nieve. ",
-      "tamano": "30 GB aprox.",
-      "voces": "Español (Latino), Español (ES), Inglés, Portugués (BR)",
-      "subtitulos": "Español (Latino), Español (ES), Inglés, Portugués (BR)",
-      "nota": "Juego original y completo, Descarga desde tu consola, Incluye guía paso a paso"
-    }
-  },
-
-   {
-    "id": "re-village-ps4",
-    "tipo": "juego",
-    "titulo": "Resident Evil Village PS4",
-    "plataforma": "PS4",
-    "categoria": "Terror, Acción",
-    "descuento": "-58%",
-    "primario": { "actual": "15", "anterior": "35.50" },
-    "secundario": { "actual": "8", "anterior": "22.30" },
-    "imagen": "./img/re-village-ps4.png",
-    "info": {
-      "sinopsis": "En la octava entrega de la franquicia Resident Evil, Ethan Winters y su esposa Mia viven pacíficamente en una nueva ubicación, marcada por el frío y la nieve. ",
-      "tamano": "30 GB aprox.",
-      "voces": "Español (Latino), Español (ES), Inglés, Portugués (BR)",
-      "subtitulos": "Español (Latino), Español (ES), Inglés, Portugués (BR)",
-      "nota": "Juego original y completo, Descarga desde tu consola, Incluye guía paso a paso"
-    }
-  },
-
-  {
-    "id": "outlast-2-ps5",
-    "tipo": "juego",
-    "titulo": "Outlast 2 PS5",
-    "plataforma": "PS5",
-    "categoria": "Aventura, Acción",
-    "descuento": "-29%",
-    "primario": { "actual": "13", "anterior": "18.50" },
-    "secundario": { "actual": "9", "anterior": "12.30" },
-    "imagen": "./img/outlast-2-ps5.png",
-    "info": {
-      "sinopsis": "En la piel del periodista Blake Langermann, los secretos mejor guardados de corrupción y poder saldrán a la luz cueste lo que cueste. ",
-      "tamano": "19 GB aprox.",
-      "voces": "Ingles",
       "subtitulos": "Español",
-      "nota": "Juego original y completo, Descarga desde tu consola, Incluye guía paso a paso"
-    }
+      "nota": "Aventura completa para un jugador."
+    },
+    "versiones": [
+      {
+        "id": "standard",
+        "nombre": "Standard Edition",
+        "subtitulo": "EL JUEGO BASE",
+        "consolas": {
+          "PS4": {
+            "primario": { "actual": "23.00", "anterior": "35.00" },
+            "secundario": { "actual": "16.00", "anterior": "25.00" }
+          },
+          "PS5": {
+            "primario": { "actual": "26.00", "anterior": "40.00" },
+            "secundario": { "actual": "19.00", "anterior": "29.00" }
+          }
+        }
+      }
+    ]
   },
-
   {
-    "id": "outlast-2-ps4",
+    "id": "ea-sports-fc-27",
     "tipo": "juego",
-    "titulo": "Outlast 2 PS4",
-    "plataforma": "PS4",
-    "categoria": "Aventura, Acción",
-    "descuento": "-29%",
-    "primario": { "actual": "11", "anterior": "18.50" },
-    "secundario": { "actual": "7", "anterior": "12.30" },
-    "imagen": "./img/outlast-2-ps4.png",
+    "titulo": "EA SPORTS FC 27",
+    "genero": "Deportes",
+    "esPreventa": true,
+    "esOferta": false,
+    "descuento": "",
+    "imagen": "https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=600&q=80",
     "info": {
-      "sinopsis": "En la piel del periodista Blake Langermann, los secretos mejor guardados de corrupción y poder saldrán a la luz cueste lo que cueste. ",
-      "tamano": "19 GB aprox.",
-      "voces": "Ingles",
-      "subtitulos": "Español",
-      "nota": "Juego original y completo, Descarga desde tu consola, Incluye guía paso a paso"
-    }
+      "sinopsis": "Temporada actualizada con clubes, selecciones, modo carrera y modos multijugador.",
+      "tamano": "62 GB aprox.",
+      "voces": "Español / Inglés",
+      "subtitulos": "Español / Inglés",
+      "nota": "Modos online pueden requerir suscripción activa."
+    },
+    "versiones": [
+      {
+        "id": "standard",
+        "nombre": "Standard Edition",
+        "subtitulo": "EL JUEGO BASE",
+        "consolas": {
+          "PS5": {
+            "primario": { "actual": "35.00", "anterior": "" },
+            "secundario": { "actual": "28.00", "anterior": "" }
+          }
+        }
+      }
+    ]
   },
-
-   {
-    "id": "outlast-bundle-of-terror-ps5",
-    "tipo": "juego",
-    "titulo": "Outlast: Bundle of Terror PS5",
-    "plataforma": "PS5",
-    "categoria": "Terror, Aventura, Acción",
-    "descuento": "-40%",
-    "primario": { "actual": "15", "anterior": "18.50" },
-    "secundario": { "actual": "9", "anterior": "12.30" },
-    "imagen": "./img/outlast-bundle-of-terror-ps5.png",
-    "info": {
-      "sinopsis": "Outlast: El horror aguarda en las lejanas montañas de Colorado, dentro del manicomio del monte Massive. - Whistleblower: En Whistleblower, adoptarás el papel de Waylon Park, un ingeniero informático que trabaja para Murkoff y que, al comienzo de Outlast, se puso en contacto mediante correo electrónico con periodistas de todo el mundo (Miles incluido). ",
-      "tamano": "8 GB aprox.",
-      "voces": "Ingles",
-      "subtitulos": "Español",
-      "nota": "Juego original y completo, Descarga desde tu consola, Incluye guía paso a paso"
-    }
-  },
-
   {
-    "id": "outlast-bundle-of-terror-ps4",
+    "id": "riders-republic",
     "tipo": "juego",
-    "titulo": "Outlast: Bundle of Terror PS4",
-    "plataforma": "PS4",
-    "categoria": "Terror, Aventura, Acción",
-    "descuento": "-40%",
-    "primario": { "actual": "12", "anterior": "18.50" },
-    "secundario": { "actual": "8", "anterior": "12.30" },
-    "imagen": "./img/outlast-bundle-of-terror-ps4.png",
+    "titulo": "Riders Republic",
+    "genero": "Carreras",
+    "esPreventa": false,
+    "esOferta": true,
+    "descuento": "-50%",
+    "imagen": "https://images.unsplash.com/photo-1552820728-8b83bb6b773f?auto=format&fit=crop&w=600&q=80",
     "info": {
-      "sinopsis": "Outlast: El horror aguarda en las lejanas montañas de Colorado, dentro del manicomio del monte Massive. - Whistleblower: En Whistleblower, adoptarás el papel de Waylon Park, un ingeniero informático que trabaja para Murkoff y que, al comienzo de Outlast, se puso en contacto mediante correo electrónico con periodistas de todo el mundo (Miles incluido). ",
-      "tamano": "8 GB aprox.",
-      "voces": "Ingles",
-      "subtitulos": "Español",
-      "nota": "Juego original y completo, Descarga desde tu consola, Incluye guía paso a paso"
-    }
+      "sinopsis": "Deportes extremos al aire libre en bicicleta, esquí, snowboard y traje de alas.",
+      "tamano": "32 GB aprox.",
+      "voces": "Español / Inglés",
+      "subtitulos": "Español / Inglés",
+      "nota": "Incluye modos multijugador y eventos."
+    },
+    "versiones": [
+      {
+        "id": "standard",
+        "nombre": "Standard Edition",
+        "subtitulo": "EL JUEGO BASE",
+        "consolas": {
+          "PS4": {
+            "primario": { "actual": "12.00", "anterior": "24.00" },
+            "secundario": { "actual": "8.00", "anterior": "16.00" }
+          },
+          "PS5": {
+            "primario": { "actual": "13.00", "anterior": "26.00" },
+            "secundario": { "actual": "9.00", "anterior": "18.00" }
+          }
+        }
+      }
+    ]
   },
-
-   {
-    "id": "alan-wake-remastered-ps4",
+  {
+    "id": "it-takes-two",
     "tipo": "juego",
-    "titulo": "Alan Wake Remastered PS4",
-    "plataforma": "PS4",
-    "categoria": "Acción",
-    "descuento": "-40%",
-    "primario": { "actual": "20", "anterior": "18.50" },
-    "secundario": { "actual": "9", "anterior": "12.30" },
-    "imagen": "./img/alan-wake-remastered-ps4.png",
+    "titulo": "It Takes Two",
+    "genero": "Aventura",
+    "esPreventa": false,
+    "esOferta": false,
+    "descuento": "",
+    "imagen": "https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=600&q=80",
     "info": {
-      "sinopsis": "Todo sucede en Bright Falls, un pueblo del noroeste estadounidense, donde Alan Wake busca a su esposa desaparecida.",
+      "sinopsis": "Aventura cooperativa diseñada de principio a fin para jugar en pareja, en local o en línea.",
       "tamano": "30 GB aprox.",
-      "voces": "Español (Latino), Español (ES), Inglés",
-      "subtitulos": "Español (Latino), Español (ES), Inglés, Portugués (BR)",
-      "nota": "Juego original y completo, Descarga desde tu consola, Incluye guía paso a paso"
-    }
-  },
-
-  {
-    "id": "alan-wake-remastered-ps5",
-    "tipo": "juego",
-    "titulo": "Alan Wake Remastered PS5",
-    "plataforma": "PS5",
-    "categoria": "Acción",
-    "descuento": "-40%",
-    "primario": { "actual": "12", "anterior": "18.50" },
-    "secundario": { "actual": "9", "anterior": "12.30" },
-    "imagen": "./img/alan-wake-remastered-ps5.png",
-    "info": {
-      "sinopsis": "Todo sucede en Bright Falls, un pueblo del noroeste estadounidense, donde Alan Wake busca a su esposa desaparecida.",
-      "tamano": "30 GB aprox.",
-      "voces": "Español (Latino), Español (ES), Inglés",
-      "subtitulos": "Español (Latino), Español (ES), Inglés, Portugués (BR)",
-      "nota": "Juego original y completo, Descarga desde tu consola, Incluye guía paso a paso"
-    }
+      "voces": "Español / Inglés",
+      "subtitulos": "Español / Inglés",
+      "nota": "Enfoque cooperativo para dos jugadores."
+    },
+    "versiones": [
+      {
+        "id": "standard",
+        "nombre": "Standard Edition",
+        "subtitulo": "EL JUEGO BASE",
+        "consolas": {
+          "PS4": {
+            "primario": { "actual": "15.00", "anterior": "25.00" },
+            "secundario": { "actual": "10.00", "anterior": "18.00" }
+          },
+          "PS5": {
+            "primario": { "actual": "15.00", "anterior": "25.00" },
+            "secundario": { "actual": "10.00", "anterior": "18.00" }
+          }
+        }
+      }
+    ]
   }
- 
 ]
