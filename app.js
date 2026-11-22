@@ -416,7 +416,17 @@ function renderizarConfigurador() {
     </div>
   `;
 
-detailContentEl.querySelectorAll("[data-ver-idx]").forEach((btn) => {
+const animarPrecios = () => {
+    detailContentEl
+      .querySelectorAll(".account-price, .total-amount, .detail-hero-img")
+      .forEach((el) => {
+        el.classList.remove("dato-animado");
+        void el.offsetWidth;
+        el.classList.add("dato-animado");
+      });
+  };
+
+  detailContentEl.querySelectorAll("[data-ver-idx]").forEach((btn) => {
     btn.addEventListener("click", () => {
       versionActivaIdx = Number(btn.dataset.verIdx);
       consolaActiva = obtenerConsolasDeVersion(
@@ -424,22 +434,15 @@ detailContentEl.querySelectorAll("[data-ver-idx]").forEach((btn) => {
         consolaActiva
       ).elegida;
       renderizarConfigurador();
-
-      // Reinicia la animación suave en .config-box para que nunca se vea brusco
-      const box = detailContentEl.querySelector(".config-box");
-      if (box) {
-        box.style.animation = "none";
-        void box.offsetWidth; // Fuerza a reiniciar la animación
-        box.style.animation = "";
-      }
+      animarPrecios();
     });
   });
-   
 
   detailContentEl.querySelectorAll("[data-cons-val]").forEach((btn) => {
     btn.addEventListener("click", () => {
       consolaActiva = btn.dataset.consVal;
       renderizarConfigurador();
+      animarPrecios();
     });
   });
 
@@ -447,6 +450,7 @@ detailContentEl.querySelectorAll("[data-ver-idx]").forEach((btn) => {
     card.addEventListener("click", () => {
       cuentaActiva = card.dataset.cuenta;
       renderizarConfigurador();
+      animarPrecios();
     });
   });
 
