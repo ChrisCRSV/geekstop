@@ -239,6 +239,57 @@ body {
   color: #091018;
 }
 
+/* Selector principal PS5 / PS4 en pantalla inicial */
+.home-console-bar {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6px;
+  background: var(--bg-elevated);
+  border: 1px solid var(--border-subtle);
+  border-radius: 14px;
+  padding: 5px;
+  margin-bottom: 18px;
+}
+
+.home-console-tab {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px 14px;
+  border: none;
+  border-radius: 10px;
+  background: transparent;
+  color: var(--text-primary);
+  font-size: 0.95rem;
+  font-weight: 800;
+  cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease, transform 0.15s ease;
+}
+
+.home-console-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--cian);
+  flex-shrink: 0;
+}
+
+.home-console-tab:not(.active) .home-console-dot {
+  background: #ec4899; /* Detalle de color al estilo de la captura en pestaña inactiva */
+}
+
+.home-console-tab.active {
+  background: var(--cian);
+  color: #091018;
+  box-shadow: 0 4px 16px rgba(0, 183, 255, 0.32);
+}
+
+.home-console-tab.active .home-console-dot {
+  background: #091018;
+}
+
+
 /* Grilla de tarjetas */
 .games-grid {
   display: grid;
