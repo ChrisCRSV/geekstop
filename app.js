@@ -6,6 +6,24 @@
 
 let CATALOGO = [];
 let SELECCION_ALEATORIA_PORTADA = [];
+
+let consolaPortada = "PS5"; // "PS5" | "PS4"
+const homeConsoleTabsEl = document.getElementById("homeConsoleTabs");
+
+function generarSeleccionPortada(consola) {
+  const disponibles = CATALOGO.filter((juego) =>
+    consolasDisponiblesJuego(juego).includes(consola)
+  );
+  return barajarLista(disponibles).slice(0, CONFIG.cantidadPortadaAleatoria);
+}
+
+function sincronizarBotonesConsolaPortada() {
+  if (!homeConsoleTabsEl) return;
+  homeConsoleTabsEl.querySelectorAll("[data-home-console]").forEach((btn) => {
+    btn.classList.toggle("active", btn.dataset.homeConsole === consolaPortada);
+  });
+}
+
 let catalogoCompletoAbierto = false;
 let sincronizandoHistorial = false;
 
@@ -162,10 +180,13 @@ function obtenerJuegosFiltrados() {
 /* --------------------------------------------------------------------------
    RENDERIZADO DE TARJETAS Y CATÁLOGO
    -------------------------------------------------------------------------- */
-function renderizarTarjetaJuego(juego) {
+function renderizarTarjetaJuego(juego, consolaReferencia = "TODOS") {
   const consolas = consolasDisponiblesJuego(juego);
   const etiquetaConsola = consolas.length > 1 ? consolas.join(" / ") : (consolas[0] || "PS4");
-  const desdePrecio = precioMinimoJuego(juego, filtroConsola === "TODOS" ? "TODOS" : filtroConsola);
+
+  // CAMBIO: antes usaba filtroConsola directo; ahora recibe consolaReferencia
+  // para que en portada calcule el "Desde" según PS5 o PS4 elegida.
+  const desdePrecio = precioMinimoJuego(juego, consolaReferencia);
 
   let badgeTop = "";
   if (juego.esOferta) {
@@ -211,29 +232,44 @@ function mostrarCatalogo({ actualizarUrl = true } = {}) {
   }
 
   let listaMostrar = [];
+  let consolaPrecio = "TODOS"; // <-- NUEVO: define qué consola usar para mostrar el precio "Desde"
 
   if (!catalogoCompletoAbierto) {
+    // Estamos en la pantalla principal (portada):
+    // 1. Mostramos la barra PS5 / PS4 de portada y ocultamos el panel de filtros completo.
+    if (homeConsoleTabsEl) homeConsoleTabsEl.style.display = "grid"; // <-- NUEVO
     filtersPanelEl.style.display = "none";
-    catalogHeadingEl.textContent = "SELECCIÓN ALEATORIA";
+    sincronizarBotonesConsolaPortada(); // <-- NUEVO: marca activo PS5 o PS4 según corresponda
+
+    catalogHeadingEl.textContent = `DESTACADOS ${consolaPortada}`; // <-- CAMBIO
     catalogSubheadingEl.textContent =
-      "Mostramos 4 títulos al azar en cada recarga. Abrí el catálogo completo para ver y filtrar todo.";
+      "Alterná entre PS5 y PS4 o recargá para ver una selección aleatoria de 4 juegos.";
     toggleCatalogBtn.textContent = "Abrir catálogo completo y filtros →";
-    listaMostrar = SELECCION_ALEATORIA_PORTADA;
+    listaMostrar = SELECCION_ALEATORIA_PORTADA; // <-- CAMBIO: usa los 4 aleatorios de la consola elegida
+    consolaPrecio = consolaPortada; // <-- NUEVO
   } else {
+    // Estamos en el catálogo completo:
+    // 1. Ocultamos la barra de portada y mostramos los filtros avanzados.
+    if (homeConsoleTabsEl) homeConsoleTabsEl.style.display = "none"; // <-- NUEVO
     filtersPanelEl.style.display = "block";
     catalogHeadingEl.textContent = "CATÁLOGO COMPLETO";
     catalogSubheadingEl.textContent =
       "Filtrá por consola, estado, precio o género y elegí la configuración de tu juego.";
-    toggleCatalogBtn.textContent = "↑ Volver a 4 aleatorios de portada";
+    toggleCatalogBtn.textContent = "↑ Volver a portada aleatoria";
     listaMostrar = obtenerJuegosFiltrados();
+    consolaPrecio = filtroConsola === "TODOS" ? "TODOS" : filtroConsola; // <-- NUEVO
   }
 
   if (listaMostrar.length === 0) {
     gamesGridEl.innerHTML = `<p style="color: var(--text-muted); grid-column: 1 / -1;">No hay juegos que coincidan con esos filtros.</p>`;
   } else {
-    gamesGridEl.innerHTML = listaMostrar.map(renderizarTarjetaJuego).join("");
+    // <-- CAMBIO: pasamos consolaPrecio a renderizarTarjetaJuego
+    gamesGridEl.innerHTML = listaMostrar
+      .map((juego) => renderizarTarjetaJuego(juego, consolaPrecio))
+      .join("");
   }
 
+  // Hace que toda la tarjeta abra el configurador al hacer clic en cualquier parte
   gamesGridEl.querySelectorAll(".game-card[data-open-game]").forEach((card) => {
     card.addEventListener("click", () => {
       const juegoId = card.dataset.openGame;
@@ -563,7 +599,17 @@ function renderizarCarrito() {
 function aplicarEstadoDesdeHash() {
   sincronizandoHistorial = true;
   const hash = window.location.hash || "";
-
+   
+if (homeConsoleTabsEl) {
+  homeConsoleTabsEl.querySelectorAll("[data-home-console]").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      consolaPortada = btn.dataset.homeConsole;
+      SELECCION_ALEATORIA_PORTADA = generarSeleccionPortada(consolaPortada);
+      mostrarCatalogo({ actualizarUrl: false });
+    });
+  });
+}
+   
   if (hash.startsWith("#juego=")) {
     const idJuego = decodeURIComponent(hash.replace("#juego=", ""));
     abrirConfiguradorJuego(idJuego, { actualizarUrl: false });
@@ -695,7 +741,7 @@ async function iniciarTienda() {
     CATALOGO = await resp.json();
 
     // Selecciona 4 productos al azar en cada recarga
-    SELECCION_ALEATORIA_PORTADA = barajarLista(CATALOGO).slice(0, CONFIG.cantidadPortadaAleatoria);
+    SELECCION_ALEATORIA_PORTADA = generarSeleccionPortada(consolaPortada);
 
     actualizarContadorCarrito();
     aplicarEstadoDesdeHash();
