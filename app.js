@@ -426,7 +426,7 @@ const animarPrecios = () => {
       });
   };
 
-  detailContentEl.querySelectorAll("[data-ver-idx]").forEach((btn) => {
+ detailContentEl.querySelectorAll("[data-ver-idx]").forEach((btn) => {
     btn.addEventListener("click", () => {
       versionActivaIdx = Number(btn.dataset.verIdx);
       consolaActiva = obtenerConsolasDeVersion(
@@ -434,9 +434,19 @@ const animarPrecios = () => {
         consolaActiva
       ).elegida;
       renderizarConfigurador();
-      animarPrecios();
+
+      detailContentEl
+        .querySelectorAll(
+          ".account-price, .total-amount, .detail-hero-img, .version-list, .console-choice-grid"
+        )
+        .forEach((el) => {
+          el.classList.remove("dato-animado");
+          void el.offsetWidth;
+          el.classList.add("dato-animado");
+        });
     });
   });
+   
 
   detailContentEl.querySelectorAll("[data-cons-val]").forEach((btn) => {
     btn.addEventListener("click", () => {
