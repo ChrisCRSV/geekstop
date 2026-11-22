@@ -312,6 +312,7 @@ function renderizarConfigurador() {
 
   const version = juegoActivo.versiones[versionActivaIdx] || juegoActivo.versiones[0];
   const { consolas, elegida } = obtenerConsolasDeVersion(version, consolaActiva);
+   const imagenActual = version.imagen || juegoActivo.imagen;
   consolaActiva = elegida;
 
   const preciosConsola = version.consolas[consolaActiva];
