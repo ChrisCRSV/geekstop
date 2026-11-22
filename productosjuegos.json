@@ -17,58 +17,24 @@
       "nota": "Juego original y completo, Descarga desde tu consola, Incluye guía paso a paso"
     }
   },
+
   {
-    "id": "fc-27-ps5",
+    "id": "resident-evil-6-ps5",
     "tipo": "juego",
-    "titulo": "EA SPORTS FC 27 Standard Edition",
+    "titulo": "Resident Evil 6 PS5",
     "plataforma": "PS5",
-    "categoria": "Deportes",
-    "descuento": "-46%",
-    "primario": { "actual": "28.50", "anterior": "45.00" },
-    "secundario": { "actual": "20.50", "anterior": "38.00" },
-    "imagen": "https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=600&q=80",
+    "categoria": "Juego de disparos / Terror / Acción",
+    "descuento": "-55%",
+    "primario": { "actual": "9.25", "anterior": "18.50" },
+    "secundario": { "actual": "7.70", "anterior": "12.30" },
+    "imagen": "./img/resident-evil-6-ps5.png",
     "info": {
-      "sinopsis": "Temporada actualizada con clubes, selecciones, modos carrera y partidas multijugador competitivas y amistosas.",
-      "tamano": "62 GB aprox.",
-      "idiomas": "Español / Inglés / Francés",
-      "modo": "Un jugador / Multijugador local y online",
-      "nota": "Los modos online requieren suscripción activa según corresponda en tu consola."
-    }
-  },
-  {
-    "id": "gow-ragnarok-ps4",
-    "tipo": "juego",
-    "titulo": "God of War Ragnarök",
-    "plataforma": "PS4",
-    "categoria": "Acción / Aventura",
-    "descuento": "-65%",
-    "primario": { "actual": "18.90", "anterior": "39.90" },
-    "secundario": { "actual": "12.60", "anterior": "36.00" },
-    "imagen": "https://images.unsplash.com/photo-1538481199705-c710c4e965fc?auto=format&fit=crop&w=600&q=80",
-    "info": {
-      "sinopsis": "Kratos y Atreus recorren los nueve reinos mientras se preparan para el Ragnarök y enfrentan nuevas amenazas nórdicas.",
-      "tamano": "90 GB aprox.",
-      "idiomas": "Español / Inglés",
-      "modo": "Un jugador",
-      "nota": "Aventura enfocada en campaña narrativa."
-    }
-  },
-  {
-    "id": "combo-re-4-5-6",
-    "tipo": "juego",
-    "titulo": "Combo Resident Evil 4, 5 y 6",
-    "plataforma": "COMBO",
-    "categoria": "Survival Horror / Acción",
-    "descuento": "-60%",
-    "primario": { "actual": "24.90", "anterior": "49.00" },
-    "secundario": { "actual": "16.80", "anterior": "42.00" },
-    "imagen": "https://images.unsplash.com/photo-1552820728-8b83bb6b773f?auto=format&fit=crop&w=600&q=80",
-    "info": {
-      "sinopsis": "Paquete con tres entregas clásicas de la saga Resident Evil que combinan tensión, investigación, acción y modo cooperativo.",
-      "tamano": "55 GB en total aprox.",
-      "idiomas": "Español / Inglés",
-      "modo": "Un jugador / Cooperativo",
-      "nota": "Incluye los tres títulos listados en el combo."
+      "sinopsis": "Luego de 15 años de la destrucción de Raccoon City, la tensión por una nueva amenaza bioterrorista vuelve a estar presente.",
+      "tamano": "16 GB aprox.",
+      "voces": "Español",
+      "subtitulos": "",
+      "nota": "Juego original y completo, Descarga desde tu consola, Incluye guía paso a paso"
     }
   }
+ 
 ]
