@@ -416,13 +416,25 @@ function renderizarConfigurador() {
     </div>
   `;
 
-  detailContentEl.querySelectorAll("[data-ver-idx]").forEach((btn) => {
+detailContentEl.querySelectorAll("[data-ver-idx]").forEach((btn) => {
     btn.addEventListener("click", () => {
       versionActivaIdx = Number(btn.dataset.verIdx);
-      consolaActiva = obtenerConsolasDeVersion(juegoActivo.versiones[versionActivaIdx], consolaActiva).elegida;
+      consolaActiva = obtenerConsolasDeVersion(
+        juegoActivo.versiones[versionActivaIdx],
+        consolaActiva
+      ).elegida;
       renderizarConfigurador();
+
+      // Reinicia la animación suave en .config-box para que nunca se vea brusco
+      const box = detailContentEl.querySelector(".config-box");
+      if (box) {
+        box.style.animation = "none";
+        void box.offsetWidth; // Fuerza a reiniciar la animación
+        box.style.animation = "";
+      }
     });
   });
+   
 
   detailContentEl.querySelectorAll("[data-cons-val]").forEach((btn) => {
     btn.addEventListener("click", () => {
