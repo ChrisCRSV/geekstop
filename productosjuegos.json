@@ -5,9 +5,9 @@
     "titulo": "Resident Evil 6 PS4",
     "plataforma": "PS4",
     "categoria": "Juego de disparos / Terror / Acción",
-    "descuento": "-55%",
-    "primario": { "actual": "9.25", "anterior": "18.50" },
-    "secundario": { "actual": "7.70", "anterior": "12.30" },
+    "descuento": "-40%",
+    "primario": { "actual": "11", "anterior": "18.50" },
+    "secundario": { "actual": "7", "anterior": "12.30" },
     "imagen": "./img/resident-evil-6-ps4.png",
     "info": {
       "sinopsis": "Luego de 15 años de la destrucción de Raccoon City, la tensión por una nueva amenaza bioterrorista vuelve a estar presente.",
@@ -24,14 +24,52 @@
     "titulo": "Resident Evil 6 PS5",
     "plataforma": "PS5",
     "categoria": "Juego de disparos / Terror / Acción",
-    "descuento": "-55%",
-    "primario": { "actual": "9.25", "anterior": "18.50" },
-    "secundario": { "actual": "7.70", "anterior": "12.30" },
+    "descuento": "-29%",
+    "primario": { "actual": "13", "anterior": "18.50" },
+    "secundario": { "actual": "9", "anterior": "12.30" },
     "imagen": "./img/resident-evil-6-ps5.png",
     "info": {
       "sinopsis": "Luego de 15 años de la destrucción de Raccoon City, la tensión por una nueva amenaza bioterrorista vuelve a estar presente.",
       "tamano": "16 GB aprox.",
       "voces": "Español",
+      "subtitulos": "",
+      "nota": "Juego original y completo, Descarga desde tu consola, Incluye guía paso a paso"
+    }
+  },
+
+  {
+    "id": "the-last-of-us-remastered-ps4",
+    "tipo": "juego",
+    "titulo": "The Last Of Us Remastered PS4",
+    "plataforma": "PS4",
+    "categoria": "Aventura, Acción",
+    "descuento": "-40%",
+    "primario": { "actual": "11", "anterior": "18.50" },
+    "secundario": { "actual": "7", "anterior": "12.30" },
+    "imagen": "./img/the-last-of-us-remastered-ps4.png",
+    "info": {
+      "sinopsis": "Ciudades abandonadas reclamadas por la naturaleza. Una población diezmada por una plaga moderna. Los supervivientes se matan entre sí para tener comida, armas y todo aquello que pueda caer en sus manos. ",
+      "tamano": "43 GB aprox.",
+      "voces": "Español (Latino)",
+      "subtitulos": "",
+      "nota": "Juego original y completo, Descarga desde tu consola, Incluye guía paso a paso"
+    }
+  },
+
+  {
+    "id": "the-last-of-us-remastered-ps5",
+    "tipo": "juego",
+    "titulo": "The Last Of Us Remastered PS5",
+    "plataforma": "PS5",
+    "categoria": "Aventura, Acción",
+    "descuento": "-29%",
+    "primario": { "actual": "13", "anterior": "18.50" },
+    "secundario": { "actual": "9", "anterior": "12.30" },
+    "imagen": "./img/the-last-of-us-remastered-ps5.png",
+    "info": {
+      "sinopsis": "Ciudades abandonadas reclamadas por la naturaleza. Una población diezmada por una plaga moderna. Los supervivientes se matan entre sí para tener comida, armas y todo aquello que pueda caer en sus manos. ",
+      "tamano": "43 GB aprox.",
+      "voces": "Español (Latino)",
       "subtitulos": "",
       "nota": "Juego original y completo, Descarga desde tu consola, Incluye guía paso a paso"
     }
