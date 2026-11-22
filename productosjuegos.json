@@ -102,13 +102,51 @@
     "categoria": "Terror, Acción",
     "descuento": "-58%",
     "primario": { "actual": "15", "anterior": "35.50" },
-    "secundario": { "actual": "7", "anterior": "22.30" },
+    "secundario": { "actual": "8", "anterior": "22.30" },
     "imagen": "./img/re-village-ps4.png",
     "info": {
       "sinopsis": "En la octava entrega de la franquicia Resident Evil, Ethan Winters y su esposa Mia viven pacíficamente en una nueva ubicación, marcada por el frío y la nieve. ",
       "tamano": "30 GB aprox.",
       "voces": "Español (Latino), Español (ES), Inglés, Portugués (BR)",
       "subtitulos": "Español (Latino), Español (ES), Inglés, Portugués (BR)",
+      "nota": "Juego original y completo, Descarga desde tu consola, Incluye guía paso a paso"
+    }
+  },
+
+  {
+    "id": "outlast-2-ps5",
+    "tipo": "juego",
+    "titulo": "Outlast 2 PS5",
+    "plataforma": "PS5",
+    "categoria": "Aventura, Acción",
+    "descuento": "-29%",
+    "primario": { "actual": "13", "anterior": "18.50" },
+    "secundario": { "actual": "9", "anterior": "12.30" },
+    "imagen": "./img/outlast-2-ps5.png",
+    "info": {
+      "sinopsis": "En la piel del periodista Blake Langermann, los secretos mejor guardados de corrupción y poder saldrán a la luz cueste lo que cueste. ",
+      "tamano": "19 GB aprox.",
+      "voces": "Ingles",
+      "subtitulos": "Español",
+      "nota": "Juego original y completo, Descarga desde tu consola, Incluye guía paso a paso"
+    }
+  },
+
+  {
+    "id": "outlast-2-ps4",
+    "tipo": "juego",
+    "titulo": "Outlast 2 PS4",
+    "plataforma": "PS4",
+    "categoria": "Aventura, Acción",
+    "descuento": "-29%",
+    "primario": { "actual": "11", "anterior": "18.50" },
+    "secundario": { "actual": "7", "anterior": "12.30" },
+    "imagen": "./img/outlast-2-ps4.png",
+    "info": {
+      "sinopsis": "En la piel del periodista Blake Langermann, los secretos mejor guardados de corrupción y poder saldrán a la luz cueste lo que cueste. ",
+      "tamano": "19 GB aprox.",
+      "voces": "Ingles",
+      "subtitulos": "Español",
       "nota": "Juego original y completo, Descarga desde tu consola, Incluye guía paso a paso"
     }
   }
