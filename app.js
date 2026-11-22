@@ -311,8 +311,9 @@ function renderizarConfigurador() {
   if (!juegoActivo) return;
 
   const version = juegoActivo.versiones[versionActivaIdx] || juegoActivo.versiones[0];
-  const { consolas, elegida } = obtenerConsolasDeVersion(version, consolaActiva);
-   const imagenActual = version.imagen || juegoActivo.imagen;
+  const imagenActual = version.imagen || juegoActivo.imagen;
+   const { consolas, elegida } = obtenerConsolasDeVersion(version, consolaActiva);
+   
   consolaActiva = elegida;
 
   const preciosConsola = version.consolas[consolaActiva];
@@ -358,7 +359,7 @@ function renderizarConfigurador() {
   const bSec = CONFIG.beneficiosCuenta.secundaria;
 
   detailContentEl.innerHTML = `
-    <img class="detail-hero-img" src="${juegoActivo.imagen}" alt="${juegoActivo.titulo}" />
+   <img class="detail-hero-img" src="${imagenActual}" alt="${juegoActivo.titulo}" />
     <h1 class="detail-title">${juegoActivo.titulo}</h1>
     <div class="meta-tags">
       ${consolasJuego.map((c) => `<span class="meta-tag">${c}</span>`).join("")}
