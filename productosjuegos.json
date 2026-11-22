@@ -73,6 +73,44 @@
       "subtitulos": "",
       "nota": "Juego original y completo, Descarga desde tu consola, Incluye guía paso a paso"
     }
+  },
+
+  {
+    "id": "re-village-ps5",
+    "tipo": "juego",
+    "titulo": "Resident Evil Village PS5",
+    "plataforma": "PS5",
+    "categoria": "Terror, Acción",
+    "descuento": "-49%",
+    "primario": { "actual": "18", "anterior": "35.50" },
+    "secundario": { "actual": "9", "anterior": "22.30" },
+    "imagen": "./img/re-village-ps5.png",
+    "info": {
+      "sinopsis": "En la octava entrega de la franquicia Resident Evil, Ethan Winters y su esposa Mia viven pacíficamente en una nueva ubicación, marcada por el frío y la nieve. ",
+      "tamano": "30 GB aprox.",
+      "voces": "Español (Latino), Español (ES), Inglés, Portugués (BR)",
+      "subtitulos": "Español (Latino), Español (ES), Inglés, Portugués (BR)",
+      "nota": "Juego original y completo, Descarga desde tu consola, Incluye guía paso a paso"
+    }
+  },
+
+   {
+    "id": "re-village-ps4",
+    "tipo": "juego",
+    "titulo": "Resident Evil Village PS4",
+    "plataforma": "PS4",
+    "categoria": "Terror, Acción",
+    "descuento": "-58%",
+    "primario": { "actual": "15", "anterior": "35.50" },
+    "secundario": { "actual": "7", "anterior": "22.30" },
+    "imagen": "./img/re-village-ps4.png",
+    "info": {
+      "sinopsis": "En la octava entrega de la franquicia Resident Evil, Ethan Winters y su esposa Mia viven pacíficamente en una nueva ubicación, marcada por el frío y la nieve. ",
+      "tamano": "30 GB aprox.",
+      "voces": "Español (Latino), Español (ES), Inglés, Portugués (BR)",
+      "subtitulos": "Español (Latino), Español (ES), Inglés, Portugués (BR)",
+      "nota": "Juego original y completo, Descarga desde tu consola, Incluye guía paso a paso"
+    }
   }
  
 ]
