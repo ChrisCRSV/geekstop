@@ -2,7 +2,7 @@
   {
     "id": "resident-evil-6-ps4",
     "tipo": "juego",
-    "titulo": "Resident Evil 6 PS5",
+    "titulo": "Resident Evil 6 PS4",
     "plataforma": "PS4",
     "categoria": "Juego de disparos / Terror / Acción",
     "descuento": "-55%",
@@ -10,11 +10,11 @@
     "secundario": { "actual": "7.70", "anterior": "12.30" },
     "imagen": "./img/resident-evil-6-ps4.png",
     "info": {
-      "sinopsis": "Explora el estado de Leonida y las calles de Vice City en una aventura de mundo abierto llena de acción, misiones y libertad total.",
-      "tamano": "85 GB aprox.",
-      "idiomas": "Español (Latinoamérica) / Inglés / Portugués",
-      "modo": "Un jugador / Online",
-      "nota": "Cuenta digital verificada. Sigue las instrucciones enviadas por WhatsApp al instalar."
+      "sinopsis": "Luego de 15 años de la destrucción de Raccoon City, la tensión por una nueva amenaza bioterrorista vuelve a estar presente.",
+      "tamano": "16 GB aprox.",
+      "idiomas": "Español",
+      "modo": " Multijugador local",
+      "nota": "Juego original y completo, Descarga desde tu consola, Incluye guía paso a paso"
     }
   },
   {
