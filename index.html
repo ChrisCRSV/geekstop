@@ -85,12 +85,25 @@
       </div>
 
       <!-- Grilla de productos (4 en portada aleatoria, o todos al filtrar) -->
+      
+<!-- Selector principal PS5 / PS4 en pantalla inicial (filtra y baraja al alternar) -->
+      <div class="home-console-bar" id="homeConsoleTabs" role="tablist" aria-label="Consola en portada">
+        <button type="button" class="home-console-tab active" data-home-console="PS5">
+          <span class="home-console-dot"></span>
+          <span>PlayStation 5</span>
+        </button>
+        <button type="button" class="home-console-tab" data-home-console="PS4">
+          <span class="home-console-dot"></span>
+          <span>PlayStation 4</span>
+        </button>
+      </div>
+      
       <div class="games-grid" id="gamesGrid"></div>
 
       <!-- Botón para abrir / cerrar catálogo completo -->
       <div class="catalog-cta-wrap">
         <button type="button" class="open-catalog-btn" id="toggleCatalogBtn">
-          Ver catálogo completo y filtros →
+          Ver catálogo completo →
         </button>
       </div>
     </section>
