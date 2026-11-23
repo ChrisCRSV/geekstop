@@ -251,5 +251,48 @@
         }
       }
     ]
-  }
+  },
+
+  {
+  "id": "the-last-of-us-remastered",
+  "tipo": "juego",
+  "titulo": "The Last Of Us Remastered",
+  "imagen": "./img/the-last-of-us-remastered.png",
+  "genero": "Aventura",
+  "esOferta": false,
+  "descuento": "",
+  "esPreventa": false,
+  "info": {
+    "sinopsis": "Ciudades abandonadas reclamadas por la naturaleza. Una población diezmada por una plaga moderna. Los supervivientes se matan entre sí para tener comida, armas y todo aquello que pueda caer en sus manos. Joel, un superviviente brutal, y Ellie, una adolescente increíblemente lista para su edad, tendrán que trabajar juntos si desean sobrevivir a su travesía a través de los EE. UU."
+  },
+  "versiones": [
+    {
+      "id": "standard",
+      "nombre": "Standard Edition",
+      "subtitulo": "EL JUEGO BASE",
+      "consolas": {
+        "PS5": {
+          "primario": {
+            "actual": "13",
+            "anterior": ""
+          },
+          "secundario": {
+            "actual": "9",
+            "anterior": ""
+          }
+        },
+        "PS4": {
+          "primario": {
+            "actual": "15",
+            "anterior": ""
+          },
+          "secundario": {
+            "actual": "10",
+            "anterior": ""
+          }
+        }
+      }
+    }
+  ]
+}
 ]
