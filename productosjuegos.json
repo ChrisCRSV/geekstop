@@ -47,10 +47,10 @@
       },
       {
         "id": "gold",
-        "titulo": "Resident Evil Village Gold Edition",
+        "titulo": "Resident Evil 7 Gold Edition & Village Gold Edition",
         "nombre": "Gold Edition Bundle",
         "subtitulo": "CONTENIDO EXTRA",
-        "imagen": "./img/resident-evil-village-gold.png",
+        "imagen": "./img/resident-evil-village-ge-bundle.png",
         "incluye": [
           "Resident Evil Village",
           "Resident Evil 7 biohazard Gold Edition",
