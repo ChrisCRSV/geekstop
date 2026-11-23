@@ -321,7 +321,7 @@ body {
 
 .cover-box {
   position: relative;
-  aspect-ratio: 3 / 4;
+  aspect-ratio: 1 / 1;
   background: var(--bg-elevated);
   overflow: hidden;
 }
