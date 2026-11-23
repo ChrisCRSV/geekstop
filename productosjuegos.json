@@ -1,65 +1,63 @@
 [
   {
     "id": "resident-evil-village",
-    "tipo": "juego",
     "titulo": "Resident Evil Village",
+    "imagen": "./img/resident-evil-village.png",
     "genero": "Terror",
-    "esPreventa": false,
     "esOferta": true,
-    "descuento": "-35%",
-    "imagen": "./img/re-village.jpg",
+    "descuento": "-25%",
+    "esPreventa": false,
     "info": {
-      "sinopsis": "Ambientada años después de los horribles acontecimientos de Resident Evil 7 biohazard, una nueva historia comienza con Ethan Winters y su esposa Mia viviendo en paz.",
-      "tamano": "35 GB aprox.",
-      "voces": "Español / Inglés",
-      "subtitulos": "Español / Inglés",
-      "nota": "Entrega digital con guía paso a paso."
+      "tamano": "",
+      "sinopsis": "En esta entrega de Resident Evil, los jugadores se encontrarán con una increíble ambientación y un salto evolutivo en la historia de Ethan Winters. En este pueblo desconocido, los habitantes no son lo que parecen y la paz se verá interrumpida por hechos monstruosos."
     },
     "versiones": [
       {
         "id": "standard",
         "nombre": "Standard Edition",
-        "subtitulo": "EL JUEGO BASE",
+        "subtitulo": "Juego base",
+        "imagen": "./img/resident-evil-village.png",
+        "incluye": [
+          "Resident Evil Village (juego base)",
+          "Resident Evil Village VR Mode"
+        ],
         "consolas": {
-          "PS4": {
-            "primario": { "actual": "20.00", "anterior": "30.00" },
-            "secundario": { "actual": "15.00", "anterior": "22.00" }
-          },
           "PS5": {
-            "primario": { "actual": "22.00", "anterior": "32.00" },
-            "secundario": { "actual": "16.50", "anterior": "24.00" }
-          }
-        }
-      },
-      {
-        "id": "gold-bundle",
-        "nombre": "Gold Edition Bundle",
-        "subtitulo": "CONTENIDO EXTRA",
-        "consolas": {
-          "PS4": {
-            "primario": { "actual": "34.00", "anterior": "48.00" },
-            "secundario": { "actual": "28.00", "anterior": "40.00" }
+            "primario": { "actual": "15.00", "anterior": "38.00" },
+            "secundario": { "actual": "9.00", "anterior": "19.00" }
           },
-          "PS5": {
-            "primario": { "actual": "36.00", "anterior": "50.00" },
-            "secundario": { "actual": "29.00", "anterior": "42.00" }
+          "PS4": {
+            "primario": { "actual": "19.00", "anterior": "" },
+            "secundario": { "actual": "10.00", "anterior": "" }
           }
         }
       },
       {
         "id": "gold",
-        "nombre": "Gold Edition",
+        "nombre": "Gold Edition Bundle",
         "subtitulo": "CONTENIDO EXTRA",
+        "imagen": "./img/",
+        "incluye": [
+          "Resident Evil Village",
+          "Resident Evil 7 biohazard Gold Edition",
+          "No soy un héroe",
+          "Expansión de los Winters",
+          "Pack traumático",
+          "Resident Evil Village VR Mode"
+        ],
         "consolas": {
+          "PS5": {
+            "primario": { "actual": "25", "anterior": "" },
+            "secundario": { "actual": "18", "anterior": "" }
+          },
           "PS4": {
-            "primario": { "actual": "12.00", "anterior": "18.00" },
-            "secundario": { "actual": "7.00", "anterior": "12.00" }
+            "primario": { "actual": "30", "anterior": "" },
+            "secundario": { "actual": "20", "anterior": "" }
           }
         }
       }
     ]
   },
-
 
   
   {
