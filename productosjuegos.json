@@ -302,5 +302,48 @@
       }
     }
   ]
+},
+
+  {
+  "id": "outlast-2",
+  "tipo": "juego",
+  "titulo": "Outlast 2",
+  "imagen": "./img/outlast-2.png",
+  "genero": "Terror",
+  "esOferta": false,
+  "descuento": "",
+  "esPreventa": false,
+  "info": {
+    "sinopsis": "Eres Blake Langermann, un camarógrafo que trabaja con su esposa, Lynn. Ambos son periodistas de investigación dispuestos a asumir riesgos y a escudriñar hasta el fondo para desvelar historias que nadie más se atreve a tocar."
+  },
+  "versiones": [
+    {
+      "id": "standard",
+      "nombre": "Standard Edition",
+      "subtitulo": "JUEGO BASE",
+      "consolas": {
+        "PS5": {
+          "primario": {
+            "actual": "11",
+            "anterior": ""
+          },
+          "secundario": {
+            "actual": "8",
+            "anterior": ""
+          }
+        },
+        "PS4": {
+          "primario": {
+            "actual": "13",
+            "anterior": ""
+          },
+          "secundario": {
+            "actual": "9",
+            "anterior": ""
+          }
+        }
+      }
+    }
+  ]
 }
 ]
