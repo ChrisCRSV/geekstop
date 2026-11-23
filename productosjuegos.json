@@ -256,7 +256,7 @@
   ]
 },
 
-  {
+ {
   "id": "resident-evil-6",
   "tipo": "juego",
   "titulo": "Resident Evil 6",
@@ -272,9 +272,8 @@
     {
       "id": "playstation-hits",
       "titulo": "Resident Evil 6",
-      "nombre": "PLAYSTATION HITS",
-      "subtitulo": "",
-      "imagen": "./img/resident-evil-6.png",
+      "nombre": "PlayStation Hits",
+      "subtitulo": "EDICIÓN COMPLETA",
       "incluye": [
         "Esta edición incluye todos los DLC",
         "dos trajes por cada protagonista"
@@ -301,15 +300,6 @@
           }
         }
       }
-    },
-    {
-      "id": "edicion-2",
-      "titulo": "Resident Evil 6",
-      "nombre": "Edición 2",
-      "subtitulo": "",
-      "imagen": "./img/resident-evil-6.png",
-      "incluye": [],
-      "consolas": {}
     }
   ]
 }
