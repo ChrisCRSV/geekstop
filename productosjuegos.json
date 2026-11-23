@@ -254,5 +254,63 @@
       }
     }
   ]
+},
+
+  {
+  "id": "resident-evil-6",
+  "tipo": "juego",
+  "titulo": "Resident Evil 6",
+  "imagen": "./img/resident-evil-6.png",
+  "genero": "Terror",
+  "esOferta": false,
+  "descuento": "",
+  "esPreventa": false,
+  "info": {
+    "sinopsis": "Resident Evil 6, con su combinación de acción y horror survival, es toda una experiencia llena de emoción y terror que no podrás olvidar. Ahora en alta resolución, el juego ofrece múltiples personajes, incluidos los favoritos de los fans y nuevas caras, así como modos individual y cooperativo, y nuevos retos para los jugadores, diferentes de los de cualquier otra entrega de la saga Resident Evil. Esta edición incluye todos los DLC, así como dos trajes por cada protagonista, originalmente solo desbloqueables desde Residentevil.net, y que ahora pueden desbloquearse desde el juego."
+  },
+  "versiones": [
+    {
+      "id": "playstation-hits",
+      "titulo": "Resident Evil 6",
+      "nombre": "PLAYSTATION HITS",
+      "subtitulo": "",
+      "imagen": "./img/resident-evil-6.png",
+      "incluye": [
+        "Esta edición incluye todos los DLC",
+        "dos trajes por cada protagonista"
+      ],
+      "consolas": {
+        "PS5": {
+          "primario": {
+            "actual": "11",
+            "anterior": ""
+          },
+          "secundario": {
+            "actual": "8",
+            "anterior": ""
+          }
+        },
+        "PS4": {
+          "primario": {
+            "actual": "13",
+            "anterior": ""
+          },
+          "secundario": {
+            "actual": "9",
+            "anterior": ""
+          }
+        }
+      }
+    },
+    {
+      "id": "edicion-2",
+      "titulo": "Resident Evil 6",
+      "nombre": "Edición 2",
+      "subtitulo": "",
+      "imagen": "./img/resident-evil-6.png",
+      "incluye": [],
+      "consolas": {}
+    }
+  ]
 }
 ]
