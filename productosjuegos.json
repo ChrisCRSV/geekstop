@@ -1,0 +1,255 @@
+[
+  {
+    "id": "resident-evil-village",
+    "tipo": "juego",
+    "titulo": "Resident Evil Village",
+    "imagen": "./img/resident-evil-village.png",
+    "genero": "Terror",
+    "esOferta": true,
+    "descuento": "-25%",
+    "esPreventa": false,
+    "info": {
+      "sinopsis": "En esta entrega de Resident Evil, los jugadores se encontrarán con una increíble ambientación y un salto evolutivo en la historia de Ethan Winters. En este pueblo desconocido, los habitantes no son lo que parecen y la paz se verá interrumpida por hechos monstruosos."
+    },
+    "versiones": [
+      {
+        "id": "standard",
+        "titulo": "Resident Evil Village",
+        "nombre": "Standard Edition",
+        "subtitulo": "Juego base",
+        "imagen": "./img/resident-evil-village.png",
+        "incluye": [
+          "Resident Evil Village (juego base)",
+          "Resident Evil Village VR Mode"
+        ],
+        "consolas": {
+          "PS5": {
+            "primario": {
+              "actual": "15.00",
+              "anterior": "38.00"
+            },
+            "secundario": {
+              "actual": "9.00",
+              "anterior": "19.00"
+            }
+          },
+          "PS4": {
+            "primario": {
+              "actual": "19.00",
+              "anterior": ""
+            },
+            "secundario": {
+              "actual": "10.00",
+              "anterior": ""
+            }
+          }
+        }
+      },
+      {
+        "id": "gold",
+        "titulo": "Resident Evil Village Gold Edition",
+        "nombre": "Gold Edition Bundle",
+        "subtitulo": "CONTENIDO EXTRA",
+        "imagen": "./img/resident-evil-village-gold.png",
+        "incluye": [
+          "Resident Evil Village",
+          "Resident Evil 7 biohazard Gold Edition",
+          "No soy un héroe",
+          "Expansión de los Winters",
+          "Pack traumático",
+          "Resident Evil Village VR Mode"
+        ],
+        "consolas": {
+          "PS5": {
+            "primario": {
+              "actual": "25.00",
+              "anterior": "35.00"
+            },
+            "secundario": {
+              "actual": "18.00",
+              "anterior": "25.00"
+            }
+          },
+          "PS4": {
+            "primario": {
+              "actual": "30.00",
+              "anterior": ""
+            },
+            "secundario": {
+              "actual": "20.00",
+              "anterior": ""
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "spider-man-2-ediciones",
+    "tipo": "juego",
+    "titulo": "Marvel's Spider-Man 2",
+    "imagen": "https://images.unsplash.com/photo-1604200213928-ba3cf4fc8436?auto=format&fit=crop&w=600&q=80",
+    "genero": "Acción",
+    "esOferta": true,
+    "descuento": "-20%",
+    "esPreventa": false,
+    "info": {
+      "sinopsis": "Los Spider-Men Peter Parker y Miles Morales regresan para una nueva y emocionante aventura de la aclamada franquicia para PS5."
+    },
+    "versiones": [
+      {
+        "id": "standard",
+        "titulo": "Marvel's Spider-Man 2",
+        "nombre": "Standard Edition",
+        "subtitulo": "Juego base PS5",
+        "imagen": "https://images.unsplash.com/photo-1604200213928-ba3cf4fc8436?auto=format&fit=crop&w=600&q=80",
+        "incluye": [
+          "Marvel's Spider-Man 2 (juego completo)"
+        ],
+        "consolas": {
+          "PS5": {
+            "primario": {
+              "actual": "32.00",
+              "anterior": "40.00"
+            },
+            "secundario": {
+              "actual": "22.00",
+              "anterior": "28.00"
+            }
+          }
+        }
+      },
+      {
+        "id": "deluxe",
+        "titulo": "Marvel's Spider-Man 2 Digital Deluxe Edition",
+        "nombre": "Digital Deluxe Edition",
+        "subtitulo": "TRAJES Y EXTRAS",
+        "imagen": "https://images.unsplash.com/photo-1635805737707-575885ab0820?auto=format&fit=crop&w=600&q=80",
+        "incluye": [
+          "Marvel's Spider-Man 2 (juego completo)",
+          "10 trajes exclusivos (5 para Peter y 5 para Miles)",
+          "Elementos adicionales del modo Foto",
+          "+2 puntos de habilidad"
+        ],
+        "consolas": {
+          "PS5": {
+            "primario": {
+              "actual": "38.00",
+              "anterior": "48.00"
+            },
+            "secundario": {
+              "actual": "27.00",
+              "anterior": "34.00"
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "the-last-of-us-remastered",
+    "tipo": "juego",
+    "titulo": "The Last Of Us Remastered",
+    "genero": "Aventura",
+    "esPreventa": false,
+    "esOferta": false,
+    "descuento": "",
+    "imagen": "https://images.unsplash.com/photo-1538481199705-c710c4e965fc?auto=format&fit=crop&w=600&q=80",
+    "info": {
+      "sinopsis": "En una civilización devastada donde los infectados y los sobrevivientes campan a sus anchas, Joel es contratado para sacar a Ellie de una zona de cuarentena militar."
+    },
+    "versiones": [
+      {
+        "id": "standard",
+        "nombre": "Standard Edition",
+        "subtitulo": "EL JUEGO BASE",
+        "consolas": {
+          "PS4": {
+            "primario": {
+              "actual": "23.00",
+              "anterior": "35.00"
+            },
+            "secundario": {
+              "actual": "16.00",
+              "anterior": "25.00"
+            }
+          },
+          "PS5": {
+            "primario": {
+              "actual": "26.00",
+              "anterior": "40.00"
+            },
+            "secundario": {
+              "actual": "19.00",
+              "anterior": "29.00"
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "ea-sports-fc-27",
+    "tipo": "juego",
+    "titulo": "EA SPORTS FC 27",
+    "genero": "Deportes",
+    "esPreventa": true,
+    "esOferta": false,
+    "descuento": "",
+    "imagen": "https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=600&q=80",
+    "info": {
+      "sinopsis": "Temporada actualizada con clubes, selecciones, modo carrera y modos multijugador."
+    },
+    "versiones": [
+      {
+        "id": "standard",
+        "nombre": "Standard Edition",
+        "subtitulo": "EL JUEGO BASE",
+        "consolas": {
+          "PS5": {
+            "primario": {
+              "actual": "35.00",
+              "anterior": ""
+            },
+            "secundario": {
+              "actual": "28.00",
+              "anterior": ""
+            }
+          }
+        }
+      }
+    ]
+  },
+  {
+    "id": "god-of-war-2018",
+    "tipo": "juego",
+    "titulo": "God of War",
+    "genero": "Acción",
+    "esPreventa": false,
+    "esOferta": true,
+    "descuento": "-40%",
+    "imagen": "https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=600&q=80",
+    "info": {
+      "sinopsis": "Kratos ha dejado atrás su venganza contra los dioses del Olimpo y vive ahora como un hombre en el reino de los dioses y monstruos nórdicos."
+    },
+    "versiones": [
+      {
+        "id": "standard",
+        "nombre": "Standard Edition",
+        "subtitulo": "EL JUEGO BASE",
+        "consolas": {
+          "PS4": {
+            "primario": {
+              "actual": "14.00",
+              "anterior": "24.00"
+            },
+            "secundario": {
+              "actual": "9.00",
+              "anterior": "15.00"
+            }
+          }
+        }
+      }
+    ]
+  }
+]

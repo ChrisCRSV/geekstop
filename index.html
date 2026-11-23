@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Geek Stop — Juegos Digitales</title>
+  <link rel="stylesheet" href="./estilos.css" />
+</head>
+<body>
+  <!-- =====================================================================
+       ENCABEZADO PRINCIPAL Y BOTÓN DE CARRITO
+       ===================================================================== -->
+  <header class="topbar">
+    <div class="topbar-inner">
+      <button type="button" class="brand-btn" id="brandHomeBtn" aria-label="Ir al inicio">
+        <span class="brand-title" id="storeName">Geek Stop</span>
+      </button>
+
+      <button type="button" class="cart-trigger" id="openCartBtn">
+        <span>Carrito</span>
+        <span class="cart-badge" id="cartCount">0</span>
+      </button>
+    </div>
+  </header>
+
+  <main class="main-container">
+    <!-- ===================================================================
+         FUTURA SECCIÓN: BANNER / PROMOS
+         =================================================================== -->
+    <section id="bannerSlot" class="future-slot" aria-label="Banner promocional"></section>
+
+    <!-- ===================================================================
+         VISTA 1: PORTADA ALEATORIA + CATÁLOGO COMPLETO FILTRABLE
+         =================================================================== -->
+    <section id="catalogView">
+      <div class="section-head">
+        <span class="kicker">EXPLORADOR DE JUEGOS</span>
+        <h1 class="page-title" id="catalogHeading">DESTACADOS DEL DÍA</h1>
+        <p class="page-subtitle" id="catalogSubheading">
+          Alterná entre PS5 y PS4 o recargá para ver una selección aleatoria de 4 juegos.
+        </p>
+      </div>
+
+      <!-- Barra de filtros: visible al abrir el catálogo completo -->
+      <div class="filters-panel" id="filtersPanel" style="display: none;">
+        <div class="filters-row">
+          <div class="pill-group" id="consoleFilters" role="group" aria-label="Consola">
+            <button type="button" class="pill-btn active" data-console="TODOS">Todos</button>
+            <button type="button" class="pill-btn" data-console="PS4">PS4</button>
+            <button type="button" class="pill-btn" data-console="PS5">PS5</button>
+          </div>
+
+          <div class="pill-group" id="tagFilters" role="group" aria-label="Estado">
+            <button type="button" class="pill-btn" data-tag="PREVENTA">Preventas</button>
+            <button type="button" class="pill-btn" data-tag="OFERTA">Ofertas</button>
+          </div>
+
+          <div class="pill-group" id="sortFilters" role="group" aria-label="Ordenar">
+            <button type="button" class="pill-btn" data-sort="AZ">A-Z</button>
+            <button type="button" class="pill-btn" data-sort="MIN">$ Min</button>
+            <button type="button" class="pill-btn" data-sort="MAX">$ Max</button>
+          </div>
+        </div>
+
+        <!-- Filtro de precio máximo ("Hasta...") -->
+        <div class="price-filter-box">
+          <div class="price-filter-header">
+            <span>Hasta <strong id="maxPriceLabel">sin límite</strong></span>
+            <button type="button" class="clear-filters-btn" id="clearFiltersBtn">✕ Limpiar filtros</button>
+          </div>
+          <input type="range" id="maxPriceRange" min="5" max="100" step="1" value="100" />
+          <p class="price-hint">Se considera la versión y cuenta más económica disponible.</p>
+        </div>
+
+        <!-- Filtro por género -->
+        <div class="genre-bar" id="genreBar" aria-label="Géneros">
+          <button type="button" class="genre-chip active" data-genre="TODAS">Todas</button>
+          <button type="button" class="genre-chip" data-genre="Acción">Acción</button>
+          <button type="button" class="genre-chip" data-genre="Aventura">Aventura</button>
+          <button type="button" class="genre-chip" data-genre="Carreras">Carreras</button>
+          <button type="button" class="genre-chip" data-genre="Deportes">Deportes</button>
+          <button type="button" class="genre-chip" data-genre="Terror">Terror</button>
+        </div>
+      </div>
+
+      <!-- Selector principal PS5 / PS4 en pantalla inicial -->
+      <div class="home-console-bar" id="homeConsoleTabs" role="tablist" aria-label="Consola en portada">
+        <button type="button" class="home-console-tab active" data-home-console="PS5">
+          <span class="home-console-dot"></span>
+          <span>PlayStation 5</span>
+        </button>
+        <button type="button" class="home-console-tab" data-home-console="PS4">
+          <span class="home-console-dot"></span>
+          <span>PlayStation 4</span>
+        </button>
+      </div>
+
+      <!-- Grilla de productos -->
+      <div class="games-grid" id="gamesGrid"></div>
+
+      <!-- Botón para abrir / cerrar catálogo completo -->
+      <div class="catalog-cta-wrap">
+        <button type="button" class="open-catalog-btn" id="toggleCatalogBtn">
+          Abrir catálogo completo y filtros →
+        </button>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         VISTA 2: CONFIGURADOR DINÁMICO DEL JUEGO
+         =================================================================== -->
+    <section id="detailView" class="detail-view" style="display: none;" aria-label="Configuración del juego">
+      <div class="detail-topbar">
+        <button type="button" class="back-btn" id="backToCatalogBtn">← Volver al catálogo</button>
+      </div>
+
+      <div class="detail-card" id="detailContent"></div>
+    </section>
+
+    <!-- ===================================================================
+         FUTURA SECCIÓN: MÁS INFORMACIÓN / GUÍAS / OTROS PRODUCTOS
+         =================================================================== -->
+    <section id="extraSectionsSlot" class="future-slot" aria-label="Información adicional y otros servicios"></section>
+  </main>
+
+  <!-- Modal del carrito -->
+  <div class="modal-backdrop" id="cartModalBackdrop" aria-hidden="true">
+    <div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="cartModalTitle">
+      <div class="modal-header">
+        <h2 id="cartModalTitle">Tu Carrito</h2>
+        <button type="button" class="close-modal-btn" id="closeCartModalBtn">✕</button>
+      </div>
+      <div id="cartModalBody"></div>
+    </div>
+  </div>
+
+  <!-- Aviso rápido (toast) -->
+  <div class="toast" id="toastMsg" role="status" aria-live="polite"></div>
+
+  <footer class="footer">
+    <p id="storeFooter">Geek Stop — Tienda de juegos digitales</p>
+  </footer>
+
+  <script src="./config.js"></script>
+  <script src="./app.js"></script>
+</body>
+</html>
