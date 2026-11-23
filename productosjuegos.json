@@ -146,48 +146,8 @@
       }
     ]
   },
-  {
-    "id": "the-last-of-us-remastered",
-    "tipo": "juego",
-    "titulo": "The Last Of Us Remastered",
-    "genero": "Aventura",
-    "esPreventa": false,
-    "esOferta": false,
-    "descuento": "",
-    "imagen": "https://images.unsplash.com/photo-1538481199705-c710c4e965fc?auto=format&fit=crop&w=600&q=80",
-    "info": {
-      "sinopsis": "En una civilización devastada donde los infectados y los sobrevivientes campan a sus anchas, Joel es contratado para sacar a Ellie de una zona de cuarentena militar."
-    },
-    "versiones": [
-      {
-        "id": "standard",
-        "nombre": "Standard Edition",
-        "subtitulo": "EL JUEGO BASE",
-        "consolas": {
-          "PS4": {
-            "primario": {
-              "actual": "23.00",
-              "anterior": "35.00"
-            },
-            "secundario": {
-              "actual": "16.00",
-              "anterior": "25.00"
-            }
-          },
-          "PS5": {
-            "primario": {
-              "actual": "26.00",
-              "anterior": "40.00"
-            },
-            "secundario": {
-              "actual": "19.00",
-              "anterior": "29.00"
-            }
-          }
-        }
-      }
-    ]
-  },
+
+  
   {
     "id": "ea-sports-fc-27",
     "tipo": "juego",
