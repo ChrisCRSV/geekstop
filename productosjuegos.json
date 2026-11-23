@@ -345,5 +345,49 @@
       }
     }
   ]
+},
+
+  {
+  "id": "alan-wake-remastered",
+  "tipo": "juego",
+  "titulo": "Alan Wake Remastered",
+  "imagen": "./img/alan-wake-remastered.png",
+  "genero": "Acción",
+  "esOferta": false,
+  "descuento": "",
+  "esPreventa": false,
+  "info": {
+    "sinopsis": "En este galardonado thriller de acción cinemática, el afligido escritor Alan Wake se embarca en la desesperada búsqueda de su mujer desaparecida, Alice. Tras su misteriosa desaparición en el pueblo de Bright Falls, en el Noroeste del Pacífico, Alan descubre las páginas de una historia de terror que supuestamente ha escrito, pero de la que no guarda ningún recuerdo."
+  },
+  "versiones": [
+    {
+      "id": "standard",
+      "nombre": "Standard Edition",
+      "subtitulo": "JUEGO BASE",
+      "consolas": {
+        "PS5": {
+          "primario": {
+            "actual": "15",
+            "anterior": ""
+          },
+          "secundario": {
+            "actual": "9",
+            "anterior": ""
+          }
+        },
+        "PS4": {
+          "primario": {
+            "actual": "20",
+            "anterior": ""
+          },
+          "secundario": {
+            "actual": "9",
+            "anterior": ""
+          }
+        }
+      }
+    }
+  ]
 }
+  
 ]
