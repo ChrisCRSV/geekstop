@@ -1122,6 +1122,29 @@ body {
   text-align: right;
 }
 
+/* ==========================================================================
+   AJUSTES MÓVILES: CENTRADO Y TAMAÑO DE KICKERS + SEPARACIÓN CON BOTÓN
+   ========================================================================== */
 
+.catalog-section-spaced {
+  margin-top: 34px;
+}
+
+@media (max-width: 767px) {
+  .section-head {
+    text-align: center;
+  }
+
+  .kicker {
+    font-size: 0.86rem;
+    padding: 6px 14px;
+    letter-spacing: 0.06em;
+  }
+
+  .catalog-section-spaced {
+    margin-top: 36px;
+    padding-top: 6px;
+  }
+}
 
 
