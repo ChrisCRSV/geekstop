@@ -322,6 +322,7 @@ function obtenerPlanMasBajoStreaming(servicio) {
   };
 }
 
+
 function crearUrlWhatsappStreaming(servicio, plan, extrasList, totalFinal) {
   const precioBaseStr = `*${CONFIG.moneda}${(parsePrecio(plan.precio) ?? 0).toFixed(2)}*`;
   const lineas = [
@@ -335,8 +336,9 @@ function crearUrlWhatsappStreaming(servicio, plan, extrasList, totalFinal) {
   });
 
   lineas.push(`• Total: *${CONFIG.moneda}${totalFinal.toFixed(2)}*`);
-  return `https://wa.me/${CONFIG.whatsappNumero}?text=${encodeURIComponent(lineas.join("\n\n"))}`;
+  return construirEnlaceWhatsapp(lineas.join("\n\n"));
 }
+
 function renderizarTarjetaStreaming(servicio) {
   const infoBase = obtenerPlanMasBajoStreaming(servicio);
   const planInicial = (servicio.planes && servicio.planes[0]) || {
@@ -1149,6 +1151,31 @@ detailViewEl.addEventListener(
 /* --------------------------------------------------------------------------
    CARRITO GLOBAL Y WHATSAPP
    -------------------------------------------------------------------------- */
+
+function esDispositivoMovil() {
+  return /Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+}
+
+function construirEnlaceWhatsapp(textoPlano) {
+  const codificado = encodeURIComponent(textoPlano);
+  if (esDispositivoMovil()) {
+    return `whatsapp://send?phone=${CONFIG.whatsappNumero}&text=${codificado}`;
+  }
+  return `https://wa.me/${CONFIG.whatsappNumero}?text=${codificado}`;
+}
+
+function aplicarComportamientoEnlaceWhatsapp(enlaceEl) {
+  if (!enlaceEl) return;
+  if (esDispositivoMovil()) {
+    enlaceEl.setAttribute("target", "_self");
+    enlaceEl.removeAttribute("rel");
+  } else {
+    enlaceEl.setAttribute("target", "_blank");
+    enlaceEl.setAttribute("rel", "noopener noreferrer");
+  }
+}
+
+
 function crearUrlWhatsappConfigurado(tituloFinal, version, consola, cuenta, precio, conMultiplesVersiones) {
   const cuentaTexto = cuenta === "primaria" ? "Primaria" : "Secundaria";
   const lineas = [
@@ -1164,9 +1191,9 @@ function crearUrlWhatsappConfigurado(tituloFinal, version, consola, cuenta, prec
   lineas.push(`• Cuenta: ${cuentaTexto}`);
   lineas.push(`• Total: *${CONFIG.moneda}${precio.toFixed(2)}*`);
 
-  const msg = encodeURIComponent(lineas.join("\n\n"));
-  return `https://wa.me/${CONFIG.whatsappNumero}?text=${msg}`;
+  return construirEnlaceWhatsapp(lineas.join("\n\n"));
 }
+
 
 function cargarCarrito() {
   try {
