@@ -5,7 +5,7 @@
 
 const CONFIG = {
   nombreTienda: "Geek Stop",
-  whatsappNumero: "593999999999", // Cambia por tu número con código de país (sin + ni espacios)
+  whatsappNumero: "593939665618", // Cambia por tu número con código de país (sin + ni espacios)
   moneda: "$",
 
   // Cuántos juegos aleatorios mostrar en la vista principal antes de abrir el catálogo completo
