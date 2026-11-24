@@ -408,6 +408,9 @@ function enlazarEventosTarjetas(contenedor) {
       if (servicioId) abrirConfiguradorStreaming(servicioId);
     });
   });
+   contenedor.querySelectorAll(".buy-now-card-btn, .buy-now-btn").forEach((enlace) => {
+    aplicarComportamientoEnlaceWhatsapp(enlace);
+  });
 }
 
 function renderizarStreamingPortada() {
@@ -695,6 +698,7 @@ function renderizarConfiguradorStreaming() {
   document.getElementById("streamAddCartBtn").addEventListener("click", () => {
     agregarStreamingAlCarrito(streamingActivo, planActual, extrasElegidosObjs);
   });
+   aplicarComportamientoEnlaceWhatsapp(detailContentEl.querySelector(".buy-now-btn"));
 }
 
 function agregarStreamingAlCarrito(servicio, plan, extrasElegidos) {
@@ -905,6 +909,7 @@ function actualizarPreciosYSeleccion({ animar = true } = {}) {
   const buyBtn = detailContentEl.querySelector(".buy-now-btn");
   if (buyBtn) {
     buyBtn.setAttribute("href", urlWhatsapp);
+     aplicarComportamientoEnlaceWhatsapp(buyBtn);
   }
 
   const oldAddBtn = document.getElementById("configAddCartBtn");
@@ -1069,7 +1074,7 @@ function renderizarConfigurador({ animarEdicion = false } = {}) {
       </div>
     </div>
   `;
-
+aplicarComportamientoEnlaceWhatsapp(detailContentEl.querySelector(".buy-now-btn"));
   detailContentEl.querySelectorAll("[data-ver-idx]").forEach((btn) => {
     btn.addEventListener("click", () => {
       const nuevoIdx = Number(btn.dataset.verIdx);
@@ -1289,9 +1294,9 @@ function renderizarCarrito() {
     })
     .join("\n\n");
 
-  const urlWa = `https://wa.me/${CONFIG.whatsappNumero}?text=${encodeURIComponent(
+const urlWa = construirEnlaceWhatsapp(
     `Hola ${CONFIG.nombreTienda}! Quiero enviar este pedido:\n\n${lineasWa}\n\nTotal: *${CONFIG.moneda}${total.toFixed(2)}*`
-  )}`;
+  );
 
   cartModalBody.innerHTML = `
     ${itemsHtml}
@@ -1303,7 +1308,8 @@ function renderizarCarrito() {
       Enviar pedido por WhatsApp
     </a>
   `;
-
+aplicarComportamientoEnlaceWhatsapp(document.getElementById("sendOrderWhatsappBtn"));
+   
   cartModalBody.querySelectorAll(".qty-btn").forEach((btn) => {
     btn.addEventListener("click", () => {
       const idx = Number(btn.dataset.i);
