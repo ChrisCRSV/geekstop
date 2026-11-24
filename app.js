@@ -1241,7 +1241,7 @@ function renderizarCarrito() {
         <div class="cart-item">
           <div>
             <div class="cart-item-title">${item.titulo}</div>
-            <div class="cart-item-meta">${detalleMeta} (${CONFIG.moneda}${item.precio.toFixed(2)})</div>
+            <div class="cart-item-meta">${detalleMeta} (<strong>${CONFIG.moneda}${item.precio.toFixed(2)}</strong>)</div>
           </div>
           <div class="cart-qty-controls">
             <button type="button" class="qty-btn" data-d="-1" data-i="${idx}">-</button>
@@ -1255,13 +1255,14 @@ function renderizarCarrito() {
 
   const lineasWa = carrito
     .map((item, i) => {
-      const partes = [item.versionNombre, item.consola, item.cuentaTexto].filter(Boolean).join(" | ");
-      return `${i + 1}. ${item.titulo} [${partes}] x${item.cantidad} = ${CONFIG.moneda}${(item.precio * item.cantidad).toFixed(2)}`;
+      const partes = [item.versionNombre, item.consola, item.cuentaTexto].filter(Boolean).join(" · ");
+      const subtotalItem = (item.precio * item.cantidad).toFixed(2);
+      return `${i + 1}. _${item.titulo}_ [${partes}] x${item.cantidad} = *${CONFIG.moneda}${subtotalItem}*`;
     })
-    .join("\n");
+    .join("\n\n");
 
   const urlWa = `https://wa.me/${CONFIG.whatsappNumero}?text=${encodeURIComponent(
-    `Hola ${CONFIG.nombreTienda}! Quiero enviar este pedido:\n\n${lineasWa}\n\nTotal: ${CONFIG.moneda}${total.toFixed(2)}`
+    `Hola ${CONFIG.nombreTienda}! Quiero enviar este pedido:\n\n${lineasWa}\n\nTotal: *${CONFIG.moneda}${total.toFixed(2)}*`
   )}`;
 
   cartModalBody.innerHTML = `
@@ -1270,7 +1271,7 @@ function renderizarCarrito() {
       <span>Total:</span>
       <span class="total-amount">${CONFIG.moneda}${total.toFixed(2)}</span>
     </div>
-    <a class="buy-now-btn" style="width:100%;" href="${urlWa}" target="_blank" rel="noopener noreferrer">
+    <a class="buy-now-btn" id="sendOrderWhatsappBtn" style="width:100%;" href="${urlWa}" target="_blank" rel="noopener noreferrer">
       Enviar pedido por WhatsApp
     </a>
   `;
@@ -1285,8 +1286,19 @@ function renderizarCarrito() {
       renderizarCarrito();
     });
   });
-}
 
+  const sendOrderBtn = document.getElementById("sendOrderWhatsappBtn");
+  if (sendOrderBtn) {
+    sendOrderBtn.addEventListener("click", () => {
+      setTimeout(() => {
+        carrito = [];
+        guardarCarrito();
+        renderizarCarrito();
+        mostrarToast("Pedido listo · Carrito vaciado");
+      }, 150);
+    });
+  }
+}
 /* --------------------------------------------------------------------------
    EVENTOS DE NAVEGACIÓN, HASH Y FILTROS
    -------------------------------------------------------------------------- */
