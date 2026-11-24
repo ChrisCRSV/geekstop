@@ -323,19 +323,20 @@ function obtenerPlanMasBajoStreaming(servicio) {
 }
 
 function crearUrlWhatsappStreaming(servicio, plan, extrasList, totalFinal) {
+  const precioBaseStr = `*${CONFIG.moneda}${(parsePrecio(plan.precio) ?? 0).toFixed(2)}*`;
   const lineas = [
     `Hola ${CONFIG.nombreTienda}! Quiero comprar:`,
-    `• ${servicio.titulo} (${plan.subtitulo || plan.duracion}) — ${CONFIG.moneda}${(parsePrecio(plan.precio) ?? 0).toFixed(2)}`
+    `• _${servicio.titulo}_ (${plan.subtitulo || plan.duracion}) — ${precioBaseStr}`
   ];
 
   extrasList.forEach((ex) => {
-    lineas.push(`• Extra combo: ${ex.nombre} (${ex.detalle}) — ${CONFIG.moneda}${(parsePrecio(ex.precioCombo) ?? 0).toFixed(2)}`);
+    const precioExtraStr = `*${CONFIG.moneda}${(parsePrecio(ex.precioCombo) ?? 0).toFixed(2)}*`;
+    lineas.push(`• Extra combo: _${ex.nombre}_ (${ex.detalle}) — ${precioExtraStr}`);
   });
 
-  lineas.push(`• Total: ${CONFIG.moneda}${totalFinal.toFixed(2)}`);
-  return `https://wa.me/${CONFIG.whatsappNumero}?text=${encodeURIComponent(lineas.join("\n"))}`;
+  lineas.push(`• Total: *${CONFIG.moneda}${totalFinal.toFixed(2)}*`);
+  return `https://wa.me/${CONFIG.whatsappNumero}?text=${encodeURIComponent(lineas.join("\n\n"))}`;
 }
-
 function renderizarTarjetaStreaming(servicio) {
   const infoBase = obtenerPlanMasBajoStreaming(servicio);
   const planInicial = (servicio.planes && servicio.planes[0]) || {
@@ -1152,7 +1153,7 @@ function crearUrlWhatsappConfigurado(tituloFinal, version, consola, cuenta, prec
   const cuentaTexto = cuenta === "primaria" ? "Primaria" : "Secundaria";
   const lineas = [
     `Hola ${CONFIG.nombreTienda}! Quiero comprar:`,
-    `• ${tituloFinal}`
+    `• _${tituloFinal}_`
   ];
 
   if (conMultiplesVersiones && version?.nombre) {
@@ -1161,9 +1162,9 @@ function crearUrlWhatsappConfigurado(tituloFinal, version, consola, cuenta, prec
 
   lineas.push(`• Consola: ${consola}`);
   lineas.push(`• Cuenta: ${cuentaTexto}`);
-  lineas.push(`• Total: ${CONFIG.moneda}${precio.toFixed(2)}`);
+  lineas.push(`• Total: *${CONFIG.moneda}${precio.toFixed(2)}*`);
 
-  const msg = encodeURIComponent(lineas.join("\n"));
+  const msg = encodeURIComponent(lineas.join("\n\n"));
   return `https://wa.me/${CONFIG.whatsappNumero}?text=${msg}`;
 }
 
