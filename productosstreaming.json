@@ -1,0 +1,122 @@
+[
+  {
+    "id": "netflix-1-perfil",
+    "tipo": "streaming",
+    "plataforma": "Netflix",
+    "titulo": "Netflix",
+    "imagen": "./img/netflix.png",
+    "esOferta": false,
+    "descuento": "",
+    "planes": [
+      {
+        "id": "1-mes",
+        "duracion": "1 Mes",
+        "subtitulo": "1 Perfil · 1 Mes",
+        "precio": "5.00",
+        "precioAnterior": ""
+      }
+    ],
+    "caracteristicas": [
+      "1 Perfil",
+      "1 Dispositivo",
+      "1 Mes",
+      "4K"
+    ],
+    "extrasCombo": [
+      {
+        "id": "extra-prime-video",
+        "nombre": "Prime Video",
+        "detalle": "1 Perfil · 1 Mes",
+        "precioCombo": "2.75",
+        "precioNormal": "3.00"
+      }
+    ]
+  },
+  {
+    "id": "prime-video-1-perfil",
+    "tipo": "streaming",
+    "plataforma": "Prime Video",
+    "titulo": "Prime Video",
+    "imagen": "./img/prime-video.png",
+    "esOferta": false,
+    "descuento": "",
+    "planes": [
+      {
+        "id": "1-mes",
+        "duracion": "1 Mes",
+        "subtitulo": "1 Perfil · 1 Mes",
+        "precio": "3.00",
+        "precioAnterior": ""
+      }
+    ],
+    "caracteristicas": [
+      "1 Perfil",
+      "1 Dispositivo",
+      "1 Mes",
+      "4K / Full HD"
+    ],
+    "extrasCombo": [
+      {
+        "id": "extra-netflix",
+        "nombre": "Netflix",
+        "detalle": "1 Perfil · 1 Mes",
+        "precioCombo": "4.75",
+        "precioNormal": "5.00"
+      }
+    ]
+  },
+  {
+    "id": "spotify-premium",
+    "tipo": "streaming",
+    "plataforma": "Spotify",
+    "titulo": "Spotify",
+    "imagen": "./img/spotify.png",
+    "esOferta": false,
+    "descuento": "",
+    "planes": [
+      {
+        "id": "1-mes",
+        "duracion": "1 Mes",
+        "subtitulo": "1 Cuenta · 1 Mes",
+        "precio": "4.00",
+        "precioAnterior": ""
+      },
+      {
+        "id": "6-meses",
+        "duracion": "6 Meses",
+        "subtitulo": "1 Cuenta · 6 Meses",
+        "precio": "20.00",
+        "precioAnterior": "24.00"
+      },
+      {
+        "id": "12-meses",
+        "duracion": "12 Meses",
+        "subtitulo": "1 Cuenta · 12 Meses",
+        "precio": "39.00",
+        "precioAnterior": "48.00"
+      }
+    ],
+    "caracteristicas": [
+      "1 Cuenta Individual",
+      "Sin anuncios",
+      "Descargas offline",
+      "Audio alta calidad"
+    ],
+    "extrasCombo": [
+      {
+        "id": "extra-netflix",
+        "nombre": "Netflix",
+        "detalle": "1 Perfil · 1 Mes",
+        "precioCombo": "4.75",
+        "precioNormal": "5.00"
+      },
+      {
+        "id": "extra-prime-video",
+        "nombre": "Prime Video",
+        "detalle": "1 Perfil · 1 Mes",
+        "precioCombo": "2.75",
+        "precioNormal": "3.00"
+      }
+    ]
+  }
+]
