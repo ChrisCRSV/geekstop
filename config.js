@@ -41,5 +41,6 @@ const CONFIG = {
 
 // Rutas de archivos de datos
 const FUENTES_DATOS = {
-  juegos: "./productosjuegos.json"
+  juegos: "./productosjuegos.json",
+  streaming: "./productosstreaming.json"
 };
